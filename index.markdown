@@ -1,4 +1,5 @@
 ---
+theme: jekyll-theme-minimal
 color: #000000
 ---
 
