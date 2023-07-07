@@ -27,7 +27,7 @@ url: "https://tobysevier.com" # the base hostname & protocol for your site, e.g.
 # github_username:  VonTob
 
 # Build settings
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
 # plugins:
 #  - jekyll-feed
 
