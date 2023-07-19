@@ -1,1 +1,1 @@
->This website can only be viewed via Nvidia H100
+>This website is best viewed on Nvidia H100.
