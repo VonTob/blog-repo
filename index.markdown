@@ -5,9 +5,9 @@
 </picture>
 
 
-- I’m a technical leader, operator, and product owner.
+- I’m a technical leader, operator, and product owner with great grit.
 - Enemy of reactivity, improver of delivery strategy and team development.
-- Always a reverse engineer, troubleshooting inefficiencies everywhere.
+- Always reverse engineering, simplifying.
 - Earned customer experience black belt in 2007 obsessing over:
      - Thoughtful listening
      - Customer vision and roadmap
