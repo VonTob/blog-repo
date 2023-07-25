@@ -1,4 +1,4 @@
 
 # TobySevier.com
-## @tobysevier
-### toby at sevier dot me
+## toby at sevier dot me
+### @tobysevier
