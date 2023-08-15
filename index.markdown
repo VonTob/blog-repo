@@ -10,3 +10,10 @@
 >> Operator & Practitioner
 >>> Manager & Leader
 
+---
+
+- 
+- 
+- 
+- 
+- 
