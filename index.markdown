@@ -6,7 +6,7 @@
 
 ---
 
-> Network & Server
+> Platform & Cloud
 >> Operator & Practitioner
 >>> Manager & Leader
 
