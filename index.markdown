@@ -6,7 +6,7 @@
 
 ---
 
-> Platform & Cloud
+> Platform, Cloud, SRE
 >> Operator & Practitioner
 >>> Manager & Leader
 
