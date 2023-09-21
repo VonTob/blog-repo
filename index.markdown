@@ -6,7 +6,7 @@
 
 ---
 
-> Platform, Cloud, SRE
+> Platform, Cloud, Customer Experience
 >> Operator & Practitioner
 >>> Manager & Leader
 
