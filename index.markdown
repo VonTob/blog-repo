@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,8 +26,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to My Black Website</h1>
-        <p>Explore the darkness.</p>
+        <h1>Oops</h1>
+        <p>why the darkness.</p>
     </div>
 </body>
 </html>
