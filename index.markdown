@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,12 +21,30 @@
         p {
             font-size: 24px;
         }
+        ul {
+            list-style-type: disc;
+            text-align: left;
+            padding-left: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Oops</h1>
         <p>why the darkness.</p>
+        <h2>U.S. State Capitals</h2>
+        <ul>
+            <li>Albany, New York</li>
+            <li>Atlanta, Georgia</li>
+            <li>Austin, Texas</li>
+            <li>Boston, Massachusetts</li>
+            <li>Denver, Colorado</li>
+            <li>Honolulu, Hawaii</li>
+            <li>Juneau, Alaska</li>
+            <li>Nashville, Tennessee</li>
+            <li>Phoenix, Arizona</li>
+            <li>Sacramento, California</li>
+        </ul>
     </div>
 </body>
 </html>
