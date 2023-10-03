@@ -1,5 +1,3 @@
-<div style="background-color: black; color: white; padding: 10px;">
-    
 
 
 > 
@@ -8,12 +6,11 @@
 
 ---
 
-# > Platform, Cloud, Customer Experience
-# >> Operator & Practitioner
-# >>> Manager & Leader
+> Platform, Cloud, Customer Experience
+>> Operator & Practitioner
+>>> Manager & Leader
 
 ---
 
 
 
-</div>
