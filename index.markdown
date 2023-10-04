@@ -19,9 +19,9 @@
 </head>
 <body>
     <!-- subscript -->
-    <div>GFG<sub>subscript text</sub></div>
+    <div><sub>subscript text</sub></div>
     <!-- superscript -->
-    <div>GFG<sup>Superscript text</sup></div>
+    <div><sup>Superscript text</sup></div>
     <!-- mark -->
     <div><mark>20231003_build_mocha</mark></div>
 </body>
