@@ -12,7 +12,7 @@
             padding: 0;
         }
         .container {
-            text-align: center;
+            text-align: left;
             padding: 100px;
         }
     </style>
