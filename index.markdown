@@ -19,21 +19,9 @@
 </head>
 <body>
     <div class="container">
-        <h6>Oops</h6>
-        <h6>Explore.</h6>
-        <h6>U.S. State Capitals</h6>
-        <ul>
-            <li>Albany, New York</li>
-            <li>Atlanta, Georgia</li>
-            <li>Austin, Texas</li>
-            <li>Boston, Massachusetts</li>
-            <li>Denver, Colorado</li>
-            <li>Honolulu, Hawaii</li>
-            <li>Juneau, Alaska</li>
-            <li>Nashville, Tennessee</li>
-            <li>Phoenix, Arizona</li>
-            <li>Sacramento, California</li>
-        </ul>
+        <h6>0.0.0.0</h6>
+        <h6>EST</h6>
+        <h6>20231003_build_mocha</h6>
     </div>
 </body>
 </html>
