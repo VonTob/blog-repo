@@ -2,12 +2,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Black Website</title>
+    <title>toby_s</title>
     <style>
         body {
             background-color: black;
             color: white;
-            font-family: Arial, sans-serif;
+            font-family: "Aptos", sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -15,23 +15,12 @@
             text-align: center;
             padding: 100px;
         }
-        h1 {
-            font-size: 48px;
-        }
-        p {
-            font-size: 24px;
-        }
-        ul {
-            list-style-type: disc;
-            text-align: left;
-            padding-left: 20px;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Oops</h1>
-        <p>why the darkness.</p>
+        <p>Explore.</p>
         <h2>U.S. State Capitals</h2>
         <ul>
             <li>Albany, New York</li>
