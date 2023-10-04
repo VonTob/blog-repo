@@ -19,7 +19,7 @@
 </head>
 <body>
     <!-- subscript -->
-    <div><sub></sub></div>
+    <div><sub>@tobysevier</sub></div>
     <!-- superscript -->
     <div><sup>toby at sevier dot me</sup></div>
     <!-- mark -->
