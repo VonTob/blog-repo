@@ -19,9 +19,9 @@
 </head>
 <body>
     <div class="container">
-        <h1>Oops</h1>
-        <p>Explore.</p>
-        <h2>U.S. State Capitals</h2>
+        <h6>Oops</h6>
+        <h6>Explore.</h6>
+        <h6>U.S. State Capitals</h6>
         <ul>
             <li>Albany, New York</li>
             <li>Atlanta, Georgia</li>
