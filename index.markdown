@@ -19,10 +19,10 @@
 </head>
 <body>
     <!-- subscript -->
-    <div><sub>email me:</sub></div>
+    <div><sub></sub></div>
     <!-- superscript -->
     <div><sup>toby at sevier dot me</sup></div>
     <!-- mark -->
-    <div><mark>20231003_build_mocha</mark></div>
+    <div><mark>20231003_build_latte</mark></div>
 </body>
 </html>
