@@ -19,9 +19,9 @@
 </head>
 <body>
     <!-- subscript -->
-    <div><sub>subscript text</sub></div>
+    <div><sub>email me:</sub></div>
     <!-- superscript -->
-    <div><sup>Superscript text</sup></div>
+    <div><sup>toby at sevier dot me</sup></div>
     <!-- mark -->
     <div><mark>20231003_build_mocha</mark></div>
 </body>
