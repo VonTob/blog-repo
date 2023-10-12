@@ -23,6 +23,6 @@
     <!-- superscript -->
     <div><sup>toby at sevier dot me</sup></div>
     <!-- mark -->
-    <div><mark>20231012_build_latte</mark></div>
+    <div><mark>20231012_build</mark></div>
 </body>
 </html>
