@@ -23,6 +23,6 @@
     <!-- superscript -->
     <div><sup>toby at sevier dot me</sup></div>
     <!-- mark -->
-    <div><mark>20231104_build</mark></div>
+    <div><mark>20231104</mark></div>
 </body>
 </html>
