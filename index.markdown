@@ -21,7 +21,7 @@
     <!-- subscript -->
     <div><sub>@tobysevier</sub></div>
     <!-- superscript -->
-    <div><sup>toby at sevier dot me</sup></div>
+    <div><sup></sup></div>
     <!-- mark -->
     <div><mark></mark></div>
 </body>
