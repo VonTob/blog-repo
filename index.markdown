@@ -23,6 +23,6 @@
     <!-- superscript -->
     <div><sup></sup></div>
     <!-- mark -->
-    <div><mark>20231118_build_latte</mark></div>
+    <div><mark>20231118_build</mark></div>
 </body>
 </html>
