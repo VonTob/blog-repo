@@ -23,6 +23,6 @@
     <!-- superscript -->
     <div><sup></sup></div>
     <!-- mark -->
-    <div><mark>20231122</mark></div>
+    <div><mark></mark></div>
 </body>
 </html>
