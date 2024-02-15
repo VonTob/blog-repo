@@ -33,10 +33,6 @@
     <br>
     <br>
     <br>
-<<<<<<< ours
     <div><mark>20240215_build_latte</mark></div>
-=======
-    <div><mark>20240215_build_mocha</mark></div>
->>>>>>> theirs
 </body>
 </html>
