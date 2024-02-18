@@ -1,38 +1,29 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>toby_s</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: "Aptos", sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            text-align: left;
-            padding: 100px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASCII Art</title>
+<style>
+  body {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+</style>
 </head>
 <body>
-    <!-- subscript -->
-    <div><sub>AAAAAAAAAAA</sub></div>
-    <!-- superscript -->
-    <div><sup>AAAAAAAAA</sup></div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!-- mark -->
-    <div><mark>BBBBBBBBBBB</mark></div>
+<pre>
+  <!-- Paste your ASCII art here -->
+  _______
+<(___()___)>
+  ( ._. )
+   )   (
+  (     )
+ (_______)
+</pre>
 </body>
 </html>
