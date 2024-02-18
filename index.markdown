@@ -7,8 +7,7 @@
         body {
             background-color: black;
             color: white;
-            font-family: monospace;
-            text-align: center;
+            font-family: "Aptos", sans-serif;
             margin: 0;
             padding: 0;
         }
