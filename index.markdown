@@ -9,7 +9,7 @@
     background-color: black;
     color: white;
     font-family: monospace;
-    text-align: center;
+    text-align: left;
     margin: 0;
     padding: 0;
   }
