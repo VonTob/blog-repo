@@ -13,10 +13,13 @@
     margin: 0;
     padding: 0;
   }
+  pre {
+    background-color: black;
+  }
 </style>
 </head>
 <body>
-<pre>
+<pre style="background-color: black;">
   <!-- Paste your ASCII art here -->
   _______
 <(___()___)>
