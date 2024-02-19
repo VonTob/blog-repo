@@ -22,7 +22,7 @@
     <!-- sub -->
     <div><sub>@tobysevier</sub></div>
     <!-- super -->
-    <div><sup>20240219</sup></div>
+    <div><sup></sup></div>
     <br>
     <br>
     <br>
