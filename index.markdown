@@ -33,8 +33,8 @@
     <br>
     <br>
     <br>
+  <!-- ert 
 <pre style="background-color: black;">
-  <!-- ert -->
 
                         
 _/_/_ _                 
@@ -53,7 +53,8 @@ _/_/_ _
 |/|/// /                
                         
 
-</pre>
+  </pre>
+  -->
     <br>
     <br>
     <br>
