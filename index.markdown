@@ -60,5 +60,12 @@ _/_/_ _
     <br>
 <!-- mark -->
 <div><mark></mark></div>
+  <h1>My Bookmarks</h1>
+  <ul>
+    <li><a href="https://www.google.com">Google</a></li>
+    <li><a href="https://www.reddit.com">Reddit</a></li>
+    <li><a href="https://www.github.com">GitHub</a></li>
+    <!-- add more bookmarks as needed -->
+  </ul>
 </body>
 </html>
