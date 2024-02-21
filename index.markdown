@@ -1,9 +1,11 @@
-  <!-- <!DOCTYPE html> --> 
+<!-- <!DOCTYPE html> --> 
+
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>toby_s</title>
+<title>The Machines Will Win | Toby Sevier</title>
 <style>
   body {
     background-color: black;
