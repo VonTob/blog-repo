@@ -32,7 +32,7 @@
     <br>
     <br>
     <br>
-<!--  
+<!--  -->
 <pre style="background-color: black;">
 <pre style="color: red;">                        
 _/_/_ _                 
@@ -44,11 +44,9 @@ _/_/_ _
      ._                 
 |/|/// /                
  </pre> 
--->
     <br>
     <br>
     <br>
-
 <!--  
   <h1>turboboost seo here</h1>
   <ul>
