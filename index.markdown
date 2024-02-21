@@ -1,6 +1,4 @@
 <!-- <!DOCTYPE html> --> 
-
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -34,7 +32,7 @@
     <br>
     <br>
     <br>
-<!-- no 
+<!--  
 <pre style="background-color: black;">                        
 _/_/_ _                 
 / / //_'                                        
@@ -51,7 +49,7 @@ _/_/_ _
     <br>
 
 <!--  
-  <h1>No</h1>
+  <h1>turboboost seo here</h1>
   <ul>
     <li><a href="https://www.google.com">Google</a></li>
     <li><a href="https://www.reddit.com">Reddit</a></li>
