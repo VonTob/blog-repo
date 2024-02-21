@@ -32,9 +32,8 @@
     <br>
     <br>
     <br>
-<!--  
-<pre style="background-color: black;">
-<pre style="color: red;">                        
+<!--  -->
+<pre style="color: red; background-color: black;">
 _/_/_ _                 
 / / //_'                                        
  _ _  _  _  /_ ._  _   _
@@ -44,7 +43,6 @@ _/_/_ _
      ._                 
 |/|/// /                
  </pre> 
- -->
     <br>
     <br>
     <br>
