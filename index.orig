@@ -1,38 +1,60 @@
+<!-- <!DOCTYPE html> --> 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>toby_s</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: "Aptos", sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            text-align: left;
-            padding: 100px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Machines Will Win | Toby Sevier</title>
+<style>
+  body {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  pre {
+    background-color: black;
+  }
+</style>
 </head>
 <body>
-    <!-- subscript -->
     <div><sub>@tobysevier</sub></div>
-    <!-- superscript -->
     <div><sup></sup></div>
-    <!-- mark -->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <div><mark></mark></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<!--  
+<pre style="background-color: black;">                        
+_/_/_ _                 
+/ / //_'                                        
+ _ _  _  _  /_ ._  _   _
+/ / //_|/_ / /// //_'_\ 
+     .//                
+|/|////                 
+     ._                 
+|/|/// /                
+ </pre> 
+-->
+    <br>
+    <br>
+    <br>
+
+<!--  
+  <h1>turboboost seo here</h1>
+  <ul>
+    <li><a href="https://www.google.com">Google</a></li>
+    <li><a href="https://www.reddit.com">Reddit</a></li>
+    <li><a href="https://www.github.com">GitHub</a></li>
+  </ul>  
+-->
 </body>
 </html>
