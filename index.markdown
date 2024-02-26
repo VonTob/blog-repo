@@ -23,8 +23,8 @@
         o    
 ><  ><  |  \/
  </pre> 
-    <div><sub></sub></div>
-    <div><sup>@tobysevier</sup></div>
+    <div><sub>@tobysevier</sub></div>
+    <div><sup></sup></div>
     <div><mark></mark></div>
     <br>
     <br>
