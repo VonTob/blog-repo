@@ -20,17 +20,8 @@
 </head>
 <body>
 <pre style="color: red; background-color: black;">
-_/_/_ _                 
-/ / //_'     
-
- _ _  _  _  /_ ._  _   _
-/ / //_|/_ / /// //_'_\ 
-
-     .//                
-|/|////                 
-
-     ._                 
-|/|/// /                
+        o    
+><  ><  |  \/
  </pre> 
     <div><sub></sub></div>
     <div><sup>@tobysevier</sup></div>
