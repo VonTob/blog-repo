@@ -19,8 +19,20 @@
 </style>
 </head>
 <body>
-    <div><sub>"        o    "</sub></div>
-    <div><sub>"><  ><  |  \/"</sub></div>
+<pre style="color: red; background-color: black;">
+_/_/_ _                 
+/ / //_'     
+
+ _ _  _  _  /_ ._  _   _
+/ / //_|/_ / /// //_'_\ 
+
+     .//                
+|/|////                 
+
+     ._                 
+|/|/// /                
+ </pre> 
+    <div><sub></sub></div>
     <div><sup>@tobysevier</sup></div>
     <div><mark></mark></div>
     <br>
