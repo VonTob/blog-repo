@@ -19,10 +19,6 @@
 </style>
 </head>
 <body>
-<pre style="color: red; background-color: black;">
-        o    
-><  ><  |  \/
- </pre> 
     <div><sub>@tobysevier</sub></div>
     <div><sup></sup></div>
     <div><mark></mark></div>
