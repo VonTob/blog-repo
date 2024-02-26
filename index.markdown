@@ -20,7 +20,7 @@
 </head>
 <body>
     <div><sub>@tobysevier</sub></div>
-    <div><sup>20240226_build</sup></div>
+    <div><sup>20240226</sup></div>
     <div><mark></mark></div>
     <br>
     <br>
