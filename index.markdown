@@ -24,8 +24,8 @@
     <div><mark></mark></div>
     <br>
     <br>
-<!--
-<pre style="color: cyan; background-color: black;">
+<!-- -->
+<pre style="color: navy; background-color: black;">
     <br>
     <br>
 _/_/_ _                 
@@ -59,7 +59,6 @@ _/_/_ _
     <br>
     <br>   
 </pre> 
--->
     <br>
     <br>
     <br>
