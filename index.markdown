@@ -25,7 +25,7 @@
     <br>
     <br>
 <!-- -->
-<pre style="color: black; background-color: black;">
+<pre style="color: grey; background-color: black;">
     <br>
     <br>
 _/_/_ _                 
