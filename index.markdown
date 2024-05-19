@@ -44,7 +44,7 @@ _/_/_ _
 |/|/// /   
     <br>
     <br>
-<iframe src="https://floor796.com/#wandering" width="1000" height="750"></iframe>
+<iframe src="https://floor796.com/#wandering" width="1000" height="1000"></iframe>
     <br>
     <br>
     <br>
