@@ -22,6 +22,7 @@
     <div><sub></sub></div>
     <div><sup></sup></div>
     <div><mark></mark></div>
+    <iframe src="https://floor796.com/#wandering" width="1000" height="750"></iframe>
     <br>
     <br>
 <!-- -->
@@ -183,7 +184,6 @@ _/__
     <br>
     <br>
 </pre> 
-<iframe src="https://floor796.com/#t0r0,776,91" width="1000" height="750"></iframe>
     <br>
     <br>
     <br>
