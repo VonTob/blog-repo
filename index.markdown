@@ -46,7 +46,7 @@ _/_/_ _
     <br>
     <br>
     <br>
-<iframe src="https://kotsoft.github.io" width="750" height="750" frameborder="0"></iframe>
+<iframe src="https://kotsoft.github.io" width="850" height="750" frameborder="0"></iframe>
     <br>
     <br>
     <br>
