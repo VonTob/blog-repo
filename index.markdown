@@ -20,7 +20,7 @@
 </head>
 <body>
     <div><sub></sub></div>
-    <div><sup>20240617_build</sup></div>
+    <div><sup>20240617</sup></div>
     <div><mark></mark></div>
     <br>
     <br>
