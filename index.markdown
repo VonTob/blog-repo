@@ -20,7 +20,7 @@
 </head>
 <body>
     <div><sub>20240618_build</sub></div>
-    <div><sup>mocha</sup></div>
+    <div><sup>latte</sup></div>
     <div><mark></mark></div>
     <br>
     <br>
