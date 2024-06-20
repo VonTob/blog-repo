@@ -19,8 +19,8 @@
 </style>
 </head>
 <body>
-    <div><sub>20240620_build</sub></div>
-    <div><sup>mocha</sup></div>
+    <div><sub></sub></div>
+    <div><sup></sup></div>
     <div><mark></mark></div>
     <br>
     <br>
