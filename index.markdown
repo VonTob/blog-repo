@@ -20,7 +20,7 @@
 </head>
 <body>
     <div><sub>20240627_build_mocha</sub></div>
-    <div><sup>latte</sup></div>
+    <div><sup></sup></div>
     <div><mark></mark></div>
     <br>
     <br>
