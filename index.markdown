@@ -21,7 +21,7 @@
 <body>
     <div><sub>20240702_build</sub></div>
     <div><sup>lemon</sup></div>
-    <div><mark>3.0.2</mark></div>
+    <div><mark>3.0</mark></div>
     <br>
     <br>
 <!-- -->
