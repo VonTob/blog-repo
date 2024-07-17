@@ -21,7 +21,7 @@
 <body>
     <div><sub>20240717_build</sub></div>
     <div><sup>lime</sup></div>
-    <div><mark>3.0</mark></div>
+    <div><mark>3</mark></div>
     <br>
     <br>
 <!-- -->
