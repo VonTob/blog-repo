@@ -19,7 +19,7 @@
 </style>
 </head>
 <body>
-    <div><sub>2024</sub></div>
+    <div><sub></sub></div>
     <div><sup></sup></div>
     <div><mark></mark></div>
     <br>
