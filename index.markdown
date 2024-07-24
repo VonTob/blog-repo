@@ -19,9 +19,9 @@
 </style>
 </head>
 <body>
-    <div><sub>20240724_build</sub></div>
-    <div><sup>mocha</sup></div>
-    <div><mark>3.0.2</mark></div>
+    <div><sub></sub></div>
+    <div><sup></sup></div>
+    <div><mark></mark></div>
     <br>
     <br>
 <!-- -->
