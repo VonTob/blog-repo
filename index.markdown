@@ -20,7 +20,7 @@
 </head>
 <body>
     <div><sub>20240731_build</sub></div>
-    <div><sup>mocha</sup></div>
+    <div><sup>AZ. AS. S@0 (n@3 a@2 Z@1 s@0, Aa[(a : type)]) S@7</sup></div>
     <div><mark>3.0.2</mark></div>
     <br>
     <br>
