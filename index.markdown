@@ -71,7 +71,7 @@ _/_/_ _
     <br>
     <br>
     <br>
-                                    ....#
+<!--                                     ....#
                                    ..#*..
                                  ..+####+.
                             .......+####....   +
@@ -92,12 +92,12 @@ _/_/_ _
                                  ..+####+.
                                    ..#*..
                                     ....#
-                                    +.
+                                    +. -->
     <br>
     <br>
     <br>
     <br>
-<pre style="color: green; background-color: black;"><code>
+<!-- <pre style="color: green; background-color: black;"><code>
 WITH RECURSIVE
   xaxis(x) AS (VALUES(-2.0) UNION ALL SELECT x+0.05 FROM xaxis WHERE x<1.2),
   yaxis(y) AS (VALUES(-1.0) UNION ALL SELECT y+0.1 FROM yaxis WHERE y<1.0),
@@ -116,7 +116,7 @@ WITH RECURSIVE
   )
 SELECT group_concat(rtrim(t),x'0a') FROM a;
 </code>
-</pre>
+</pre> -->
     <br>
     <br>
     <br>
