@@ -1,6 +1,5 @@
-.site-header .site-title a {
-  color: green; 
-  font-family: Arial, Helvetica, sans-serif;
+.site-header, .site-header .site-title a {
+  color: inherit !important;  
 }
 
 body, body * { 
