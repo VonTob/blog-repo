@@ -22,6 +22,8 @@ footer {
   display: none !important; 
 }
 
-.site-header, .site-header .site-title a {
+
+.site-header, 
+.site-header .site-title a {
   color: inherit !important;  
 }

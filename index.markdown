@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Machines Will Win | Toby Sevier</title>
-<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<!-- <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}"> -->
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" media="screen">
 </head>
 <body>
     <div><sub></sub></div>
