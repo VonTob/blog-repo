@@ -23,7 +23,6 @@ footer {
 }
 
 
-.site-header, 
-.site-header .site-title a {
-  color: inherit !important;  
+header h1 { 
+  color: inherit !important; 
 }
