@@ -20,5 +20,5 @@ pre {
 }
 
 .site-footer {
-  display: none; 
+  display: none !important; 
 }
