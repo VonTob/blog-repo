@@ -13,9 +13,16 @@
     margin: 0;
     padding: 0;
   }
-  pre {
-    background-color: black;
-  }
+      /* Target all elements within the body */
+    body * { 
+      background-color: black; /* Set background to black for all elements */
+    }
+    pre {
+      color: green; /* Keep the green text color for pre elements */
+    }
+    iframe {
+      background-color: black; /* Set iframe background to black */
+    }
 </style>
 </head>
 <body>
