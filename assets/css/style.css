@@ -2,10 +2,11 @@ body, body * {
     background-color: black !important; 
     color: white;
     font-family: monospace;
-    text-align: left;
+    text-align: center; /* Center align all elements */
     margin: 0;
     padding: 0;
   }
   pre {
     color: green; 
+    text-align: left; /* Align pre text to the left */
   } 
