@@ -18,3 +18,7 @@ pre {
   color: green; 
   text-align: left; 
 }
+
+.site-footer {
+  display: none; 
+}
