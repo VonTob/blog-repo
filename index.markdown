@@ -5,23 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Machines Will Win | Toby Sevier</title>
 <style>
-  body {
-    background-color: black;
-    color: white;
-    font-family: monospace;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-  }
-      /* Target all elements within the body */
-    body * { 
-      background-color: black; /* Set background to black for all elements */
+    body, body * { 
+      background-color: black; 
+      color: white;
+      font-family: monospace;
+      text-align: left;
+      margin: 0;
+      padding: 0;
     }
     pre {
-      color: green; /* Keep the green text color for pre elements */
-    }
-    iframe {
-      background-color: black; /* Set iframe background to black */
+      color: green; 
     }
 </style>
 </head>
