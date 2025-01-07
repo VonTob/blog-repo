@@ -4,19 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Machines Will Win | Toby Sevier</title>
-<style>
-    body, body * { 
-      background-color: black; 
-      color: white;
-      font-family: monospace;
-      text-align: left;
-      margin: 0;
-      padding: 0;
-    }
-    pre {
-      color: green; 
-    }
-</style>
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
     <div><sub></sub></div>
