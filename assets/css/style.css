@@ -16,7 +16,8 @@ body {
 pre {
   color: green; 
   text-align: left; 
-}
+  font-size: 24px;  
+} 
 
 footer {
   display: none !important; 
