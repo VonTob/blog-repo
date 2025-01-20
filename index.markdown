@@ -127,7 +127,6 @@ SELECT group_concat(rtrim(t),x'0a') FROM a;
     <br>
 <!-- <iframe src="https://grantkot.com/ll/" width="1000" height="750" frameborder="0"></iframe> --> 
 <!-- <iframe src="https://time-flies.koenvangilst.nl" width="1000" height="750" frameborder="0"></iframe> -->
-<iframe src="https://shaunlebron.github.io/parinfer/" width="1000" height="750" frameborder="0"></iframe>
     <br>
     <br>
     <br>
