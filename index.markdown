@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" media="screen">
 </head>
 <body>
-    <div><sub>20250206_build_mocha</sub></div>
+    <div><sub>20250206_build_latte</sub></div>
     <div><sup>3.0.2</sup></div>
 <!-- <div><mark>AZ. AS. S@0 (n@3 a@2 Z@1 s@0, Aa[(a : type)]) S@7</mark></div> -->
 <!-- <div><mark>0 -> (a@1 -> a@2) -> a@2]. AZ. AS. S@0 (n@3 a@2 z@1 S@0), (a : Type)</mark></div> -->
@@ -69,8 +69,13 @@ _/_/_ _
     <br>
     <br>
     <br>
-<!-- <iframe src="https://paveldogreat.github.io/WebGL-Fluid-Simulation/" width="1000" height="750" frameborder="0"></iframe> -->
 <iframe src="https://river-runner-global.samlearner.com" width="1000" height="750" frameborder="0"></iframe>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<iframe src="https://thestrikeagency.com/kaos" width="1000" height="750" frameborder="0"></iframe>
     <br>
     <br>
     <br>
@@ -134,6 +139,7 @@ SELECT group_concat(rtrim(t),x'0a') FROM a;
     <br>
 <!-- <iframe src="https://grantkot.com/ll/" width="1000" height="750" frameborder="0"></iframe> --> 
 <!-- <iframe src="https://time-flies.koenvangilst.nl" width="1000" height="750" frameborder="0"></iframe> -->
+<!-- <iframe src="https://paveldogreat.github.io/WebGL-Fluid-Simulation/" width="1000" height="750" frameborder="0"></iframe> -->
     <br>
     <br>
     <br>
