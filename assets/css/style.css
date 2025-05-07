@@ -19,6 +19,16 @@ pre {
   font-size: 14px;  
 } 
 
+iframe {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1000 / 750;
+  height: auto;
+  margin: 20px auto;
+  border: none;
+}
+
 footer {
   display: none !important; 
 }
