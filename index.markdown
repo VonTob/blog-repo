@@ -80,7 +80,6 @@ _/_/_ _
     <br>
     <br>
     <br>
-<iframe src="https://jdfio.com/pages-output/demos/x-mode/" frameborder="0"></iframe>
     <br>
     <br>
     <br>
