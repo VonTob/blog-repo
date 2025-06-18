@@ -80,7 +80,6 @@ _/_/_ _
     <br>
     <br>
     <br>
-<iframe src="https://oisinmoran.com/sumertime" frameborder="0"></iframe>
     <br>
     <br>
     <br>
