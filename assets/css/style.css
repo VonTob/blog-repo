@@ -1,18 +1,19 @@
-/* Modern Dark Theme for blog-repo-11 */
+/* Glassmorphism Dark Theme for blog-repo-11 */
 
 :root {
   --bg-main: #181a1b;
-  --bg-secondary: #23272a;
+  --glass-bg: rgba(36, 39, 46, 0.65);
+  --glass-blur: blur(16px);
+  --glass-border: rgba(255,255,255,0.12);
+  --accent: #00ffd0;
+  --accent2: #7f5cff;
   --text-main: #f4f4f4;
   --text-secondary: #b0b3b8;
-  --accent: #00ff99;
-  --code-green: #39ff14;
-  --border: #333;
-  --shadow: 0 2px 16px rgba(0,0,0,0.4);
+  --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
 body {
-  background: var(--bg-main);
+  background: linear-gradient(135deg, #181a1b 0%, #23272a 100%);
   color: var(--text-main);
   font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
@@ -25,18 +26,22 @@ body {
 
 header, footer {
   width: 100%;
-  background: var(--bg-secondary);
+  background: var(--glass-bg);
   color: var(--accent);
   text-align: center;
   padding: 1.5rem 0;
   box-shadow: var(--shadow);
+  border-bottom: 1px solid var(--glass-border);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
 }
 
 header h1 {
   color: var(--accent);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif;
   font-size: 2.5rem;
   margin: 0;
+  letter-spacing: 2px;
 }
 
 main {
@@ -47,15 +52,18 @@ main {
 }
 
 pre {
-  color: var(--code-green);
-  background: #101112;
-  border-radius: 8px;
+  color: var(--accent2);
+  background: var(--glass-bg);
+  border-radius: 18px;
   padding: 1.5rem;
   font-size: 1rem;
   font-family: 'Fira Mono', 'Consolas', monospace;
   box-shadow: var(--shadow);
   margin: 2rem 0;
   overflow-x: auto;
+  border: 1.5px solid var(--glass-border);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
 }
 
 iframe {
@@ -65,33 +73,39 @@ iframe {
   aspect-ratio: 4 / 3;
   height: auto;
   margin: 2rem auto;
-  border-radius: 12px;
+  border-radius: 18px;
   box-shadow: var(--shadow);
-  border: 1px solid var(--border);
-  background: var(--bg-secondary);
+  border: 1.5px solid var(--glass-border);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
 }
 
-/* Card-like styling for content blocks */
+/* Glass card styling for content blocks */
 div, section, article {
-  background: var(--bg-secondary);
-  border-radius: 10px;
+  background: var(--glass-bg);
+  border-radius: 18px;
   box-shadow: var(--shadow);
   padding: 1.2rem 1.5rem;
   margin: 1.5rem 0;
   width: 100%;
   max-width: 900px;
   box-sizing: border-box;
+  border: 1.5px solid var(--glass-border);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
 }
 
 /* Subtle link and button styles */
 a {
   color: var(--accent);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color 0.2s, text-shadow 0.2s;
+  font-weight: 500;
 }
 a:hover {
   color: #fff;
-  text-shadow: 0 0 8px var(--accent);
+  text-shadow: 0 0 12px var(--accent2);
 }
 
 /* Responsive adjustments */
@@ -112,6 +126,6 @@ footer {
 
 /* Subscript and superscript styling */
 sub, sup {
-  color: var(--accent);
+  color: var(--accent2);
   font-size: 1.1em;
 }
