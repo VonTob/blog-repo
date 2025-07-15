@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Toby Sevier | The Machines Will Win</title>
   <link rel="stylesheet" href="/assets/css/style.css" media="screen">
+  <!-- Google Fonts: Orbitron for a futuristic, cool look -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
   <style>
     .circle-frame {
       width: 120px;
@@ -36,11 +38,26 @@
       border-radius: 50%;
       transition: box-shadow 0.2s;
     }
+    .cool-title {
+      font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+      font-weight: 700;
+      font-size: 2.7rem;
+      color: #e0e0e0;
+      letter-spacing: 2.5px;
+      text-shadow: 0 2px 16px rgba(0,0,0,0.7);
+      margin: 0;
+      background: none;
+    }
+    @media (max-width: 600px) {
+      .cool-title {
+        font-size: 1.5rem;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Toby Sevier</h1>
+    <h1 class="cool-title">Toby Sevier</h1>
     <p style="margin-top: 0.5rem; font-size: 1.2rem; color: var(--text-secondary); letter-spacing: 1px;">The Machines Will Win</p>
   </header>
   <main style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 70vh;">
