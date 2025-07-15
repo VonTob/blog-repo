@@ -5,6 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Toby Sevier | Digital Business Card</title>
   <link rel="stylesheet" href="/assets/css/style.css" media="screen">
+  <style>
+    .circle-frame {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 3px solid var(--accent2);
+      background: var(--glass-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .circle-frame:hover {
+      box-shadow: 0 0 0 6px var(--accent2), var(--shadow);
+      border-color: var(--accent);
+    }
+    .circle-frame iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+      pointer-events: none; /* Prevent interaction inside the iframe */
+    }
+    .circle-link {
+      display: inline-block;
+      border-radius: 50%;
+      transition: box-shadow 0.2s;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -13,10 +45,12 @@
   </header>
   <main style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 70vh;">
     <section style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem; max-width: 400px; width: 100%;">
-      <!-- Profile Image Placeholder -->
-      <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent2)); display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow); margin-bottom: 1rem;">
-        <span style="font-size: 3rem; color: #fff; font-weight: bold;">TS</span>
-      </div>
+      <!-- Profile Image Frame linking to firehose3d.theo.io -->
+      <a href="https://firehose3d.theo.io" class="circle-link" target="_blank" rel="noopener" title="Visit firehose3d.theo.io">
+        <div class="circle-frame">
+          <iframe src="https://firehose3d.theo.io" title="firehose3d preview" tabindex="-1"></iframe>
+        </div>
+      </a>
       <!-- About / Intro -->
       <div style="text-align: center;">
         <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Engineer, builder, and explorer of the digital frontier. Always learning, always shipping.</p>
