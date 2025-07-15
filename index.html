@@ -20,30 +20,6 @@
       position: relative;
       overflow-x: hidden;
     }
-    /* Clouds background */
-    .clouds-bg {
-      position: fixed;
-      inset: 0;
-      z-index: 0;
-      pointer-events: none;
-      /* Remove width/height/overflow so it covers the viewport */
-    }
-    .cloud {
-      position: absolute;
-      background: radial-gradient(ellipse at center, rgba(80,80,90,0.18) 0%, rgba(80,80,90,0.10) 60%, rgba(80,80,90,0.0) 100%);
-      border-radius: 50%;
-      filter: blur(8px);
-      animation: cloudmove 60s linear infinite;
-    }
-    .cloud.c1 { width: 400px; height: 120px; top: 10%; left: -30%; animation-duration: 70s; }
-    .cloud.c2 { width: 300px; height: 100px; top: 30%; left: -20%; animation-duration: 90s; }
-    .cloud.c3 { width: 350px; height: 110px; top: 60%; left: -25%; animation-duration: 80s; }
-    .cloud.c4 { width: 250px; height: 80px; top: 75%; left: -15%; animation-duration: 100s; }
-    .cloud.c5 { width: 500px; height: 140px; top: 50%; left: -35%; animation-duration: 120s; }
-    @keyframes cloudmove {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(140vw); }
-    }
     .content {
       position: relative;
       z-index: 1;
@@ -104,13 +80,6 @@
   </style>
 </head>
 <body>
-  <div class="clouds-bg">
-    <div class="cloud c1"></div>
-    <div class="cloud c2"></div>
-    <div class="cloud c3"></div>
-    <div class="cloud c4"></div>
-    <div class="cloud c5"></div>
-  </div>
   <div class="content">
     <main style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh;">
       <div class="circle-frame">
