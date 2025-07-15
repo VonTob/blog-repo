@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toby Sevier | The Machines Will Win</title>
+  <title>The Machines Will Win</title>
   <link rel="stylesheet" href="/assets/css/style.css" media="screen">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
   <style>
@@ -19,6 +19,28 @@
       align-items: center;
       position: relative;
       overflow-x: hidden;
+    }
+    .ascii-title {
+      width: 100%;
+      text-align: center;
+      margin-top: 2.5rem;
+      color: #b0b3b8;
+      font-size: 1.1rem;
+      font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+      letter-spacing: 1px;
+      line-height: 1.1;
+      white-space: pre;
+      user-select: text;
+    }
+    .scroll-message {
+      width: 100%;
+      text-align: center;
+      color: #888c94;
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin: 2rem 0 1.5rem 0;
+      letter-spacing: 1.5px;
+      font-family: 'Orbitron', 'Fira Mono', 'Consolas', monospace;
     }
     .content {
       position: relative;
@@ -67,19 +89,32 @@
       margin-bottom: 2rem;
     }
     @media (max-width: 600px) {
-      .circle-frame {
-        width: 160px;
-        height: 160px;
-        margin-top: 3rem;
-      }
-      .about {
-        font-size: 1rem;
-        padding: 0 1rem;
-      }
+      .ascii-title { font-size: 0.7rem; }
+      .circle-frame { width: 160px; height: 160px; margin-top: 3rem; }
+      .about { font-size: 1rem; padding: 0 1rem; }
+      .scroll-message { font-size: 1.1rem; }
     }
   </style>
 </head>
 <body>
+  <div class="ascii-title">
+<pre>
+  _/_/_ _                 
+  / / //_'
+    
+   _ _  _  _  /_ ._  _   _
+  / / //_|/_ / /// //_'_\ 
+  
+       .//                
+  |/|////
+  
+       ._                 
+  |/|/// /
+</pre>
+  </div>
+  <!-- Add many <br> for scroll effect -->
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="scroll-message">how they win is up to us</div>
   <div class="content">
     <main style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh;">
       <div class="circle-frame">
@@ -88,7 +123,7 @@
       <div class="about">
         <br>
         <br>
-        <span style="color:#44474d; font-size:0.95em;">Toby Sevier</span>
+        <span style="color:#44474d; font-size:0.95em;">XXIV</span>
       </div>
     </main>
     <footer>
