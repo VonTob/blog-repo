@@ -5,38 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Toby Sevier | The Machines Will Win</title>
   <link rel="stylesheet" href="/assets/css/style.css" media="screen">
-  <!-- Google Fonts: Orbitron for a futuristic, cool look -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
   <style>
-    .circle-frame {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      border: 3px solid var(--accent2);
-      background: var(--glass-bg);
+    body {
+      background: #16181a;
+      color: #d1d5db;
+      font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      margin-bottom: 1rem;
-      transition: box-shadow 0.2s, border-color 0.2s;
     }
-    .circle-frame:hover {
-      box-shadow: 0 0 0 6px var(--accent2), var(--shadow);
-      border-color: var(--accent);
-    }
-    .circle-frame iframe {
+    header {
       width: 100%;
-      height: 100%;
-      border: none;
-      display: block;
-      pointer-events: none; /* Prevent interaction inside the iframe */
-    }
-    .circle-link {
-      display: inline-block;
-      border-radius: 50%;
-      transition: box-shadow 0.2s;
+      text-align: center;
+      margin-top: 3.5rem;
+      margin-bottom: 2.5rem;
     }
     .cool-title {
       font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
@@ -48,9 +34,60 @@
       margin: 0;
       background: none;
     }
+    .subtitle {
+      color: #888c94;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      margin-top: 0.7rem;
+      margin-bottom: 0;
+    }
+    .circle-frame {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+      border: 3px solid #23272a;
+      background: #23272a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2.5rem auto;
+    }
+    .circle-initials {
+      font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+      font-size: 2.7rem;
+      color: #bcbcbc;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .about {
+      text-align: center;
+      color: #b0b3b8;
+      font-size: 1.1rem;
+      max-width: 400px;
+      margin: 0 auto 2.5rem auto;
+      line-height: 1.6;
+    }
+    footer {
+      width: 100%;
+      text-align: center;
+      color: #44474d;
+      font-size: 0.95rem;
+      margin-top: auto;
+      margin-bottom: 2rem;
+    }
     @media (max-width: 600px) {
       .cool-title {
         font-size: 1.5rem;
+      }
+      .circle-frame {
+        width: 80px;
+        height: 80px;
+      }
+      .about {
+        font-size: 1rem;
+        padding: 0 1rem;
       }
     }
   </style>
@@ -58,30 +95,20 @@
 <body>
   <header>
     <h1 class="cool-title">Toby Sevier</h1>
-    <p style="margin-top: 0.5rem; font-size: 1.2rem; color: var(--text-secondary); letter-spacing: 1px;">The Machines Will Win</p>
+    <p class="subtitle">The Machines Will Win</p>
   </header>
-  <main style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 70vh;">
-    <section style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem; max-width: 400px; width: 100%;">
-      <!-- Profile Image Frame linking to firehose3d.theo.io -->
-      <a href="https://firehose3d.theo.io" class="circle-link" target="_blank" rel="noopener" title="Visit firehose3d.theo.io">
-        <div class="circle-frame">
-          <iframe src="https://firehose3d.theo.io" title="firehose3d preview" tabindex="-1"></iframe>
-        </div>
-      </a>
-      <!-- About / Intro -->
-      <div style="text-align: center;">
-        <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Engineer, builder, and explorer of the digital frontier. Always learning, always shipping.</p>
-      </div>
-      <!-- Contact & Social Links -->
-      <div style="display: flex; gap: 1.2rem; justify-content: center;">
-        <a href="mailto:toby@example.com" title="Email" style="padding: 0.6rem 1.2rem; border-radius: 8px; background: var(--glass-bg); border: 1.5px solid var(--glass-border); box-shadow: var(--shadow); font-size: 1rem;">Email</a>
-        <a href="https://github.com/VonTob" target="_blank" rel="noopener" title="GitHub" style="padding: 0.6rem 1.2rem; border-radius: 8px; background: var(--glass-bg); border: 1.5px solid var(--glass-border); box-shadow: var(--shadow); font-size: 1rem;">GitHub</a>
-        <a href="https://linkedin.com/in/tobysevier" target="_blank" rel="noopener" title="LinkedIn" style="padding: 0.6rem 1.2rem; border-radius: 8px; background: var(--glass-bg); border: 1.5px solid var(--glass-border); box-shadow: var(--shadow); font-size: 1rem;">LinkedIn</a>
-      </div>
-    </section>
+  <main style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh;">
+    <div class="circle-frame">
+      <span class="circle-initials">TS</span>
+    </div>
+    <div class="about">
+      Engineer, builder, and explorer of the digital frontier.<br>
+      Always learning, always shipping.<br>
+      <span style="color:#44474d; font-size:0.95em;">(No links, just vibes.)</span>
+    </div>
   </main>
   <footer>
-    <p style="color: var(--text-secondary); font-size: 0.95rem;">&copy; 2025 Toby Sevier</p>
+    &copy; 2025 Toby Sevier
   </footer>
 </body>
 </html> 
