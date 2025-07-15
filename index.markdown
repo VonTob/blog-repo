@@ -1,36 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toby Sevier | Digital Business Card</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" media="screen">
-</head>
-<body>
-  <header>
-    <h1>Toby Sevier</h1>
-    <p style="margin-top: 0.5rem; font-size: 1.2rem; color: var(--text-secondary); letter-spacing: 1px;">The Machines Will Win</p>
-  </header>
-  <main style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 70vh;">
-    <section style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem; max-width: 400px; width: 100%;">
-      <!-- Profile Image Placeholder -->
-      <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent2)); display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow); margin-bottom: 1rem;">
-        <span style="font-size: 3rem; color: #fff; font-weight: bold;">TS</span>
-      </div>
-      <!-- About / Intro -->
-      <div style="text-align: center;">
-        <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Engineer, builder, and explorer of the digital frontier. Always learning, always shipping.</p>
-      </div>
-      <!-- Contact & Social Links -->
-      <div style="display: flex; gap: 1.2rem; justify-content: center;">
-        <a href="mailto:toby@example.com" title="Email" style="padding: 0.6rem 1.2rem; border-radius: 8px; background: var(--glass-bg); border: 1.5px solid var(--glass-border); box-shadow: var(--shadow); font-size: 1rem;">Email</a>
-        <a href="https://github.com/VonTob" target="_blank" rel="noopener" title="GitHub" style="padding: 0.6rem 1.2rem; border-radius: 8px; background: var(--glass-bg); border: 1.5px solid var(--glass-border); box-shadow: var(--shadow); font-size: 1rem;">GitHub</a>
-        <a href="https://linkedin.com/in/tobysevier" target="_blank" rel="noopener" title="LinkedIn" style="padding: 0.6rem 1.2rem; border-radius: 8px; background: var(--glass-bg); border: 1.5px solid var(--glass-border); box-shadow: var(--shadow); font-size: 1rem;">LinkedIn</a>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p style="color: var(--text-secondary); font-size: 0.95rem;">&copy; 2025 Toby Sevier</p>
-  </footer>
-</body>
-</html>
+<header>
+  <h1>Toby Sevier</h1>
+  <p style="margin-top: 0.5rem; font-size: 1.2rem; color: var(--text-secondary); letter-spacing: 1px;">The Machines Will Win</p>
+</header>
+<main style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 70vh;">
+  <section style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem; max-width: 400px; width: 100%;">
+    <!-- Profile Image Placeholder -->
+    <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent2)); display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow); margin-bottom: 1rem;">
+      <span style="font-size: 3rem; color: #fff; font-weight: bold;">TS</span>
+    </div>
+    <!-- About / Intro -->
+    <div style="text-align: center;">
+      <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Engineer, builder, and explorer of the digital frontier. Always learning, always shipping.</p>
+    </div>
+    <!-- Contact & Social Links -->
+    <div style="display: flex; gap: 1.2rem; justify-content: center;">
+      <a href="mailto:toby@example.com" title="Email" style="padding: 0.6rem 1.2rem; border-radius: 8px; background: var(--glass-bg); border: 1.5px solid var(--glass-border); box-shadow: var(--shadow); font-size: 1rem;">Email</a>
+      <a href="https://github.com/VonTob" target="_blank" rel="noopener" title="GitHub" style="padding: 0.6rem 1.2rem; border-radius: 8px; background: var(--glass-bg); border: 1.5px solid var(--glass-border); box-shadow: var(--shadow); font-size: 1rem;">GitHub</a>
+      <a href="https://linkedin.com/in/tobysevier" target="_blank" rel="noopener" title="LinkedIn" style="padding: 0.6rem 1.2rem; border-radius: 8px; background: var(--glass-bg); border: 1.5px solid var(--glass-border); box-shadow: var(--shadow); font-size: 1rem;">LinkedIn</a>
+    </div>
+  </section>
+</main>
+<footer>
+  <p style="color: var(--text-secondary); font-size: 0.95rem;">&copy; 2025 Toby Sevier</p>
+</footer>
