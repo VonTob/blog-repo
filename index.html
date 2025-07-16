@@ -102,7 +102,8 @@
     .text-above {
       position: fixed;
       top: calc(50% - 180px);
-      left: calc(50% - 200px);
+      left: 50%;
+      transform: translateX(-50%);
       color: #00ff00;
       font-family: 'Fira Mono', 'Consolas', monospace;
       font-size: 0.7rem;
@@ -112,11 +113,13 @@
       z-index: 1000;
       opacity: 0.3;
       transition: all 0.3s ease;
+      text-align: center;
     }
     .text-below {
       position: fixed;
       bottom: calc(50% - 180px);
-      right: calc(50% - 200px);
+      left: 50%;
+      transform: translateX(-50%);
       color: #00ff00;
       font-family: 'Fira Mono', 'Consolas', monospace;
       font-size: 0.7rem;
@@ -126,6 +129,7 @@
       z-index: 1000;
       opacity: 0.3;
       transition: all 0.3s ease;
+      text-align: center;
     }
     @media (max-width: 600px) {
       .circle-frame { 
@@ -140,13 +144,15 @@
       }
       .text-above {
         top: calc(50% - 140px);
-        left: calc(50% - 150px);
+        left: 50%;
+        transform: translateX(-50%);
         font-size: 0.6rem;
         letter-spacing: 0.5px;
       }
       .text-below {
         bottom: calc(50% - 140px);
-        right: calc(50% - 150px);
+        left: 50%;
+        transform: translateX(-50%);
         font-size: 0.6rem;
         letter-spacing: 0.5px;
       }
@@ -165,12 +171,14 @@
       }
       .text-above {
         top: calc(50% - 100px);
-        left: calc(50% - 120px);
+        left: 50%;
+        transform: translateX(-50%);
         font-size: 0.5rem;
       }
       .text-below {
         bottom: calc(50% - 100px);
-        right: calc(50% - 120px);
+        left: 50%;
+        transform: translateX(-50%);
         font-size: 0.5rem;
       }
     }
