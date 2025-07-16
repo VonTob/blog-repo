@@ -104,27 +104,34 @@
       top: calc(50% - 180px);
       left: calc(50% - 200px);
       color: #00ff00;
-      font-family: 'Orbitron', 'Fira Mono', 'Consolas', monospace;
-      font-size: 1.2rem;
-      font-weight: 300;
-      letter-spacing: 2px;
-      text-transform: lowercase;
+      font-family: 'Fira Mono', 'Consolas', monospace;
+      font-size: 0.7rem;
+      font-weight: normal;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
       z-index: 1000;
+      opacity: 0.3;
+      transition: all 0.3s ease;
     }
     .text-below {
       position: fixed;
       bottom: calc(50% - 180px);
       right: calc(50% - 200px);
       color: #00ff00;
-      font-family: 'Orbitron', 'Fira Mono', 'Consolas', monospace;
-      font-size: 1.2rem;
-      font-weight: 300;
-      letter-spacing: 2px;
-      text-transform: lowercase;
+      font-family: 'Fira Mono', 'Consolas', monospace;
+      font-size: 0.7rem;
+      font-weight: normal;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
       z-index: 1000;
+      opacity: 0.3;
+      transition: all 0.3s ease;
     }
     @media (max-width: 600px) {
-      .circle-frame { width: 160px; height: 160px; }
+      .circle-frame { 
+        width: 160px; 
+        height: 160px; 
+      }
       .stealth-button {
         right: calc(50% - 120px);
         height: 80px;
@@ -134,14 +141,37 @@
       .text-above {
         top: calc(50% - 140px);
         left: calc(50% - 150px);
-        font-size: 0.9rem;
-        letter-spacing: 1px;
+        font-size: 0.6rem;
+        letter-spacing: 0.5px;
       }
       .text-below {
         bottom: calc(50% - 140px);
         right: calc(50% - 150px);
-        font-size: 0.9rem;
-        letter-spacing: 1px;
+        font-size: 0.6rem;
+        letter-spacing: 0.5px;
+      }
+    }
+    
+    @media (max-width: 400px) {
+      .circle-frame { 
+        width: 120px; 
+        height: 120px; 
+      }
+      .stealth-button {
+        right: calc(50% - 90px);
+        height: 60px;
+        font-size: 0.5rem;
+        padding: 12px 4px;
+      }
+      .text-above {
+        top: calc(50% - 100px);
+        left: calc(50% - 120px);
+        font-size: 0.5rem;
+      }
+      .text-below {
+        bottom: calc(50% - 100px);
+        right: calc(50% - 120px);
+        font-size: 0.5rem;
       }
     }
   </style>
