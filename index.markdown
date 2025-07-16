@@ -1,24 +1,20 @@
 <header>
   <h1>Toby Sevier</h1>
-  <p style="margin-top: 0.5rem; font-size: 1.2rem; color: var(--text-secondary); letter-spacing: 1px;">The Machines Will Win</p>
 </header>
 <main style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 70vh;">
-  <section style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem; max-width: 400px; width: 100%;">
-    <!-- Profile Image Placeholder -->
-    <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent2)); display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow); margin-bottom: 1rem;">
-      <span style="font-size: 3rem; color: #fff; font-weight: bold;">TS</span>
-    </div>
-    <!-- About / Intro -->
-    <div style="text-align: center;">
-      <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Engineer, builder, and explorer of the digital frontier. Always learning, always shipping.</p>
-    </div>
-    <!-- Contact & Social Links -->
-    <div style="display: flex; gap: 1.2rem; justify-content: center;">
-      <a href="mailto:toby@example.com" title="Email" style="padding: 0.6rem 1.2rem; border-radius: 8px; background: var(--glass-bg); border: 1.5px solid var(--glass-border); box-shadow: var(--shadow); font-size: 1rem;">Email</a>
-      <a href="https://github.com/VonTob" target="_blank" rel="noopener" title="GitHub" style="padding: 0.6rem 1.2rem; border-radius: 8px; background: var(--glass-bg); border: 1.5px solid var(--glass-border); box-shadow: var(--shadow); font-size: 1rem;">GitHub</a>
-      <a href="https://linkedin.com/in/tobysevier" target="_blank" rel="noopener" title="LinkedIn" style="padding: 0.6rem 1.2rem; border-radius: 8px; background: var(--glass-bg); border: 1.5px solid var(--glass-border); box-shadow: var(--shadow); font-size: 1rem;">LinkedIn</a>
-    </div>
-  </section>
+  <!-- Top text (above circle-frame) -->
+  <p style="margin-top: 2rem; font-size: 2rem; color: var(--accent2); text-align: center; font-family: 'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif; text-shadow: 0 0 8px var(--accent2); font-weight: bold;">the machines will win</p>
+
+  <!-- Circle-frame -->
+  <div style="width: 240px; height: 240px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent2)); display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow); margin: 2.5rem 0 2.5rem 0;">
+    <!-- You can put content here if needed, or leave empty for just the circle -->
+  </div>
+
+  <!-- Bottom text (below circle-frame) -->
+  <p style="font-size: 1.5rem; color: var(--accent2); text-align: center; font-family: 'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif; text-shadow: 0 0 8px var(--accent2); font-weight: bold;">...how they win is up to us</p>
+
+  <!-- Connect button -->
+  <a href="mailto:toby@example.com" title="Connect" style="display: block; margin: 4rem auto 0 auto; padding: 0.8rem 2.2rem; border-radius: 12px; border: 2.5px solid #7f5cff; color: #7f5cff; background: none; font-size: 1.2rem; font-family: 'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif; font-weight: bold; letter-spacing: 2px; text-align: center; text-shadow: 0 0 12px #7f5cff, 0 0 24px #7f5cff; box-shadow: 0 0 16px #7f5cff44; transition: box-shadow 0.2s, color 0.2s;">Connect</a>
 </main>
 <footer>
   <p style="color: var(--text-secondary); font-size: 0.95rem;">&copy; 2025 Toby Sevier</p>
