@@ -22,13 +22,13 @@
     }
     .stealth-button {
       position: fixed;
-      top: 50%;
-      right: calc(50% - 180px);
-      transform: translateY(-50%);
+      top: calc(50% + 140px);
+      left: 50%;
+      transform: translateX(-50%);
       background: #0a0a0a;
       border: 1px solid #00ff00;
       color: #00ff00;
-      padding: 20px 8px;
+      padding: 8px 12px;
       font-size: 0.7rem;
       font-family: 'Fira Mono', 'Consolas', monospace;
       text-decoration: none;
@@ -38,12 +38,6 @@
       z-index: 1000;
       letter-spacing: 0.5px;
       text-transform: uppercase;
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
-      height: 120px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
     .stealth-button:hover {
       color: #2a2a2a;
@@ -117,7 +111,7 @@
     }
     .text-below {
       position: fixed;
-      bottom: calc(50% - 200px);
+      top: calc(50% + 220px);
       left: 50%;
       transform: translateX(-50%);
       color: #00ff00;
@@ -137,10 +131,11 @@
         height: 160px; 
       }
       .stealth-button {
-        right: calc(50% - 120px);
-        height: 80px;
+        top: calc(50% + 120px);
+        left: 50%;
+        transform: translateX(-50%);
         font-size: 0.6rem;
-        padding: 15px 6px;
+        padding: 6px 10px;
       }
       .text-above {
         top: calc(50% - 140px);
@@ -150,7 +145,7 @@
         letter-spacing: 0.5px;
       }
       .text-below {
-        bottom: calc(50% - 160px);
+        top: calc(50% + 180px);
         left: 50%;
         transform: translateX(-50%);
         font-size: 0.6rem;
@@ -164,10 +159,11 @@
         height: 120px; 
       }
       .stealth-button {
-        right: calc(50% - 90px);
-        height: 60px;
+        top: calc(50% + 90px);
+        left: 50%;
+        transform: translateX(-50%);
         font-size: 0.5rem;
-        padding: 12px 4px;
+        padding: 4px 8px;
       }
       .text-above {
         top: calc(50% - 100px);
@@ -176,7 +172,7 @@
         font-size: 0.5rem;
       }
       .text-below {
-        bottom: calc(50% - 120px);
+        top: calc(50% + 140px);
         left: 50%;
         transform: translateX(-50%);
         font-size: 0.5rem;
