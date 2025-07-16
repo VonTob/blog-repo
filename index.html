@@ -99,6 +99,30 @@
       border-radius: 50%;
       aspect-ratio: 1 / 1;
     }
+    .text-above {
+      position: fixed;
+      top: calc(50% - 180px);
+      left: calc(50% - 200px);
+      color: #00ff00;
+      font-family: 'Orbitron', 'Fira Mono', 'Consolas', monospace;
+      font-size: 1.2rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-transform: lowercase;
+      z-index: 1000;
+    }
+    .text-below {
+      position: fixed;
+      bottom: calc(50% - 180px);
+      right: calc(50% - 200px);
+      color: #00ff00;
+      font-family: 'Orbitron', 'Fira Mono', 'Consolas', monospace;
+      font-size: 1.2rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-transform: lowercase;
+      z-index: 1000;
+    }
     @media (max-width: 600px) {
       .circle-frame { width: 160px; height: 160px; }
       .stealth-button {
@@ -107,13 +131,27 @@
         font-size: 0.6rem;
         padding: 15px 6px;
       }
+      .text-above {
+        top: calc(50% - 140px);
+        left: calc(50% - 150px);
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+      }
+      .text-below {
+        bottom: calc(50% - 140px);
+        right: calc(50% - 150px);
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+      }
     }
   </style>
 </head>
 <body>
   <a href="mailto:toby.sevier@gmail.com" class="stealth-button" title="Connect">Connect</a>
+  <div class="text-above">the machines will win</div>
   <div class="circle-frame">
     <iframe src="https://thestrikeagency.com/kaos" frameborder="0" scrolling="no" title="firehose3d preview" allowfullscreen></iframe>
   </div>
+  <div class="text-below">...how they win is up to us</div>
 </body>
 </html> 
