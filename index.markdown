@@ -14,7 +14,7 @@
   <p style="font-size: 1.5rem; color: var(--accent2); text-align: center; font-family: 'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif; text-shadow: 0 0 8px var(--accent2); font-weight: bold;">...how they win is up to us</p>
 
   <!-- Connect button -->
-  <a href="mailto:toby@example.com" title="Connect" style="display: block; margin: 4rem auto 0 auto; padding: 0.8rem 2.2rem; border-radius: 12px; border: 2.5px solid #7f5cff; color: #7f5cff; background: none; font-size: 1.2rem; font-family: 'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif; font-weight: bold; letter-spacing: 2px; text-align: center; text-shadow: 0 0 12px #7f5cff, 0 0 24px #7f5cff; box-shadow: 0 0 16px #7f5cff44; transition: box-shadow 0.2s, color 0.2s;">Connect</a>
+  <a href="mailto:toby@example.com" title="Toby Sevier" style="display: block; margin: 4rem auto 0 auto; padding: 0.8rem 2.2rem; border-radius: 12px; border: 2.5px solid #7f5cff; color: #7f5cff; background: none; font-size: 1.2rem; font-family: 'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif; font-weight: bold; letter-spacing: 2px; text-align: center; text-shadow: 0 0 12px #7f5cff, 0 0 24px #7f5cff; box-shadow: 0 0 16px #7f5cff44; transition: box-shadow 0.2s, color 0.2s;">Toby Sevier</a>
 </main>
 <footer>
   <p style="color: var(--text-secondary); font-size: 0.95rem;">&copy; 2025 Toby Sevier</p>
