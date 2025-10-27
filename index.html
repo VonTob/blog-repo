@@ -43,11 +43,11 @@
       top: calc(50% + 200px);
       left: 50%;
       transform: translateX(-50%);
-      background: linear-gradient(135deg, #ffd700 0%, #ffed4e 25%, #ffd700 50%, #ffed4e 75%, #ffd700 100%);
+      background: linear-gradient(135deg, #1a2f4e 0%, #1e3a5e 25%, #1a2f4e 50%, #1e3a5e 75%, #1a2f4e 100%);
       background-size: 200% 200%;
       animation: shimmer 3s ease-in-out infinite;
-      border: 2px solid #ffd700;
-      color: #1a1a1a;
+      border: 2px solid #00c9ff;
+      color: #00c9ff;
       padding: 8px 12px;
       font-size: 0.7rem;
       font-family: 'Fira Mono', 'Consolas', monospace;
@@ -59,51 +59,57 @@
       letter-spacing: 0.5px;
       text-transform: uppercase;
       font-weight: bold;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      text-shadow: 0 0 5px #00c9ff, 0 0 10px #00c9ff, 0 0 15px #00c9ff, 0 0 20px #00c9ff;
       box-shadow: 
-        0 0 10px rgba(255, 215, 0, 0.8),
-        0 0 20px rgba(255, 215, 0, 0.6),
-        0 0 30px rgba(255, 215, 0, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.5),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+        0 0 15px rgba(0, 201, 255, 1),
+        0 0 25px rgba(0, 201, 255, 0.9),
+        0 0 40px rgba(0, 201, 255, 0.7),
+        0 0 50px rgba(0, 201, 255, 0.5),
+        inset 0 1px 0 rgba(0, 201, 255, 0.5),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.5);
       position: relative;
     }
     .stealth-button::before {
-      content: '✨';
+      content: '◉';
       position: absolute;
       top: -5px;
-      left: 10%;
-      font-size: 0.5rem;
+      left: 15%;
+      font-size: 0.4rem;
+      color: #00c9ff;
       animation: sparkle 2s ease-in-out infinite;
       pointer-events: none;
+      filter: drop-shadow(0 0 3px #00c9ff);
     }
     .stealth-button::after {
-      content: '✨';
+      content: '◉';
       position: absolute;
       bottom: -5px;
-      right: 10%;
-      font-size: 0.5rem;
+      right: 15%;
+      font-size: 0.4rem;
+      color: #00c9ff;
       animation: sparkle 2s ease-in-out 1s infinite;
       pointer-events: none;
+      filter: drop-shadow(0 0 3px #00c9ff);
     }
     .stealth-button:hover {
-      color: #000;
-      background: linear-gradient(135deg, #ffed4e 0%, #ffd700 25%, #ffed4e 50%, #ffd700 75%, #ffed4e 100%);
+      color: #00d9ff;
+      background: linear-gradient(135deg, #1e3a5e 0%, #1a2f4e 25%, #1e3a5e 50%, #1a2f4e 75%, #1e3a5e 100%);
       background-size: 200% 200%;
-      border-color: #ffc107;
+      border-color: #00d9ff;
       opacity: 1;
       box-shadow: 
-        0 0 15px rgba(255, 215, 0, 1),
-        0 0 30px rgba(255, 215, 0, 0.8),
-        0 0 45px rgba(255, 215, 0, 0.6),
-        inset 0 2px 0 rgba(255, 255, 255, 0.7),
-        inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+        0 0 20px rgba(0, 201, 255, 1),
+        0 0 35px rgba(0, 201, 255, 1),
+        0 0 50px rgba(0, 201, 255, 0.9),
+        0 0 65px rgba(0, 201, 255, 0.7),
+        inset 0 2px 0 rgba(0, 201, 255, 0.6),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.5);
     }
     .stealth-button:active {
       transform: translateX(-50%) translateY(2px) scale(0.97);
       box-shadow: 
-        0 0 8px rgba(255, 215, 0, 0.6),
-        inset 0 2px 4px rgba(0, 0, 0, 0.3);
+        0 0 8px rgba(0, 201, 255, 0.8),
+        inset 0 2px 4px rgba(0, 0, 0, 0.5);
       opacity: 0.95;
     }
     .circle-frame {
