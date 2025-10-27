@@ -20,37 +20,91 @@
       position: relative;
       overflow-x: hidden;
     }
+    @keyframes sparkle {
+      0%, 100% {
+        opacity: 0.3;
+        transform: scale(0.8);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+    }
+    @keyframes shimmer {
+      0% {
+        background-position: -200% center;
+      }
+      100% {
+        background-position: 200% center;
+      }
+    }
     .stealth-button {
       position: fixed;
       top: calc(50% + 280px);
       left: 50%;
       transform: translateX(-50%);
-      background: #0a0a0a;
-      border: 1px solid #4a148c;
-      color: #4a148c;
+      background: linear-gradient(135deg, #ffd700 0%, #ffed4e 25%, #ffd700 50%, #ffed4e 75%, #ffd700 100%);
+      background-size: 200% 200%;
+      animation: shimmer 3s ease-in-out infinite;
+      border: 2px solid #ffd700;
+      color: #1a1a1a;
       padding: 8px 12px;
       font-size: 0.7rem;
       font-family: 'Fira Mono', 'Consolas', monospace;
       text-decoration: none;
-      border-radius: 2px;
+      border-radius: 4px;
       transition: all 0.3s ease;
-      opacity: 0.6;
+      opacity: 0.9;
       z-index: 1000;
       letter-spacing: 0.5px;
       text-transform: uppercase;
-      text-shadow: 0 0 5px #4a148c, 0 0 10px #4a148c, 0 0 15px #4a148c;
-      box-shadow: 0 0 5px #4a148c, 0 0 10px #4a148c, inset 0 0 5px rgba(74, 20, 140, 0.3);
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      box-shadow: 
+        0 0 10px rgba(255, 215, 0, 0.8),
+        0 0 20px rgba(255, 215, 0, 0.6),
+        0 0 30px rgba(255, 215, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+    .stealth-button::before {
+      content: '✨';
+      position: absolute;
+      top: -5px;
+      left: 10%;
+      font-size: 0.5rem;
+      animation: sparkle 2s ease-in-out infinite;
+      pointer-events: none;
+    }
+    .stealth-button::after {
+      content: '✨';
+      position: absolute;
+      bottom: -5px;
+      right: 10%;
+      font-size: 0.5rem;
+      animation: sparkle 2s ease-in-out 1s infinite;
+      pointer-events: none;
     }
     .stealth-button:hover {
-      color: #2a2a2a;
-      background: #0f0f0f;
-      border-color: #2a2a2a;
-      opacity: 0.6;
+      color: #000;
+      background: linear-gradient(135deg, #ffed4e 0%, #ffd700 25%, #ffed4e 50%, #ffd700 75%, #ffed4e 100%);
+      background-size: 200% 200%;
+      border-color: #ffc107;
+      opacity: 1;
+      box-shadow: 
+        0 0 15px rgba(255, 215, 0, 1),
+        0 0 30px rgba(255, 215, 0, 0.8),
+        0 0 45px rgba(255, 215, 0, 0.6),
+        inset 0 2px 0 rgba(255, 255, 255, 0.7),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.3);
     }
     .stealth-button:active {
-      transform: translateY(2px) scale(0.97);
-      box-shadow: 0 0 2px #4a148c, 0 0 4px #4a148c, inset 0 0 2px rgba(74, 20, 140, 0.3);
-      opacity: 0.8;
+      transform: translateY(2px) scale(0.97) translateX(-50%);
+      box-shadow: 
+        0 0 8px rgba(255, 215, 0, 0.6),
+        inset 0 2px 4px rgba(0, 0, 0, 0.3);
+      opacity: 0.95;
     }
     .circle-frame {
       position: fixed;
