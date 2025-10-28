@@ -131,10 +131,25 @@
         0 0 50px rgba(157, 78, 221, 0.7),
         0 0 65px rgba(157, 78, 221, 0.5);
       border: 3px solid #9d4edd;
-      background: #23272a;
+      background: linear-gradient(135deg, #23272a 0%, #2a2f35 25%, #23272a 50%, #2a2f35 75%, #23272a 100%);
+      background-size: 200% 200%;
+      animation: shimmer 3s ease-in-out infinite;
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
+    }
+    .circle-frame::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(157, 78, 221, 0.3), transparent);
+      animation: shimmer 3s ease-in-out infinite;
+      pointer-events: none;
+      z-index: 10;
     }
     .circle-frame iframe {
       width: 100%;
@@ -161,6 +176,13 @@
       transition: all 0.3s ease;
       text-align: center;
       text-shadow: 0 0 5px #9d4edd, 0 0 10px #9d4edd, 0 0 15px #9d4edd;
+      background: linear-gradient(135deg, rgba(157, 78, 221, 0.8) 0%, rgba(199, 125, 255, 0.8) 25%, rgba(157, 78, 221, 0.8) 50%, rgba(199, 125, 255, 0.8) 75%, rgba(157, 78, 221, 0.8) 100%);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: shimmer 3s ease-in-out infinite;
+      filter: drop-shadow(0 0 5px #9d4edd) drop-shadow(0 0 10px #9d4edd) drop-shadow(0 0 15px #9d4edd);
     }
     .text-below {
       position: fixed;
@@ -178,6 +200,13 @@
       transition: all 0.3s ease;
       text-align: center;
       text-shadow: 0 0 5px #9d4edd, 0 0 10px #9d4edd, 0 0 15px #9d4edd;
+      background: linear-gradient(135deg, rgba(157, 78, 221, 0.8) 0%, rgba(199, 125, 255, 0.8) 25%, rgba(157, 78, 221, 0.8) 50%, rgba(199, 125, 255, 0.8) 75%, rgba(157, 78, 221, 0.8) 100%);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: shimmer 3s ease-in-out infinite;
+      filter: drop-shadow(0 0 5px #9d4edd) drop-shadow(0 0 10px #9d4edd) drop-shadow(0 0 15px #9d4edd);
     }
     @media (max-width: 600px) {
       .circle-frame { 
