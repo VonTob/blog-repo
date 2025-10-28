@@ -274,7 +274,7 @@
     }
     .number-one {
       position: fixed;
-      top: calc(50% - 380px);
+      top: calc(50% - 420px);
       left: 50%;
       transform: translateX(-50%);
       color: #9d4edd;
@@ -288,7 +288,14 @@
       justify-content: center;
       width: 240px;
       height: 240px;
+      border-radius: 50%;
+      border: 3px solid #9d4edd;
       text-shadow: 0 0 5px #9d4edd, 0 0 10px #9d4edd, 0 0 15px #9d4edd, 0 0 20px #9d4edd;
+      box-shadow: 
+        0 0 15px rgba(157, 78, 221, 1),
+        0 0 25px rgba(157, 78, 221, 0.9),
+        0 0 40px rgba(157, 78, 221, 0.7),
+        0 0 50px rgba(157, 78, 221, 0.5);
       filter: drop-shadow(0 0 5px #9d4edd) drop-shadow(0 0 10px #9d4edd) drop-shadow(0 0 15px #9d4edd);
       background: linear-gradient(135deg, rgba(157, 78, 221, 0.8) 0%, rgba(199, 125, 255, 0.8) 25%, rgba(157, 78, 221, 0.8) 50%, rgba(199, 125, 255, 0.8) 75%, rgba(157, 78, 221, 0.8) 100%);
       background-size: 200% 200%;
@@ -299,10 +306,11 @@
     }
     @media (max-width: 600px) {
       .number-one {
-        top: calc(50% - 280px);
+        top: calc(50% - 320px);
         font-size: 120px;
         width: 160px;
         height: 160px;
+        border: 3px solid #9d4edd;
       }
       .circle-frame { 
         width: 160px; 
@@ -335,10 +343,11 @@
     
     @media (max-width: 400px) {
       .number-one {
-        top: calc(50% - 220px);
+        top: calc(50% - 260px);
         font-size: 90px;
         width: 120px;
         height: 120px;
+        border: 3px solid #9d4edd;
       }
       .circle-frame { 
         width: 120px; 
