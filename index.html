@@ -276,13 +276,13 @@
     }
     .number-one {
       position: fixed;
-      top: calc(50% - 420px);
+      top: calc(50% - 320px);
       left: 50%;
       transform: translateX(-50%);
       color: #9d4edd;
       font-family: 'Fira Mono', 'Consolas', monospace;
       font-size: 180px;
-      font-weight: bold;
+      font-weight: normal;
       line-height: 1;
       z-index: 1000;
       display: flex;
@@ -300,17 +300,40 @@
         0 0 50px rgba(157, 78, 221, 0.5),
         inset 0 1px 0 rgba(157, 78, 221, 0.5),
         inset 0 -1px 0 rgba(0, 0, 0, 0.5);
-      filter: drop-shadow(0 0 5px #9d4edd) drop-shadow(0 0 10px #9d4edd) drop-shadow(0 0 15px #9d4edd);
+      filter: drop-shadow(0 0 5px #9d4edd) drop-shadow(0 0 10px #9d4edd) drop-shadow(0 0 15px #9d4edd) blur(1px);
       background: linear-gradient(135deg, rgba(157, 78, 221, 0.8) 0%, rgba(199, 125, 255, 0.8) 25%, rgba(157, 78, 221, 0.8) 50%, rgba(199, 125, 255, 0.8) 75%, rgba(157, 78, 221, 0.8) 100%);
       background-size: 200% 200%;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
       animation: shimmer 3s ease-in-out infinite;
+      position: relative;
+    }
+    .number-one::before {
+      content: '◉';
+      position: absolute;
+      top: -8px;
+      left: 15%;
+      font-size: 0.6rem;
+      color: #9d4edd;
+      animation: sparkle 2s ease-in-out infinite;
+      pointer-events: none;
+      filter: drop-shadow(0 0 5px #9d4edd);
+    }
+    .number-one::after {
+      content: '◉';
+      position: absolute;
+      bottom: -8px;
+      right: 15%;
+      font-size: 0.6rem;
+      color: #9d4edd;
+      animation: sparkle 2s ease-in-out 1s infinite;
+      pointer-events: none;
+      filter: drop-shadow(0 0 5px #9d4edd);
     }
     @media (max-width: 600px) {
       .number-one {
-        top: calc(50% - 320px);
+        top: calc(50% - 250px);
         font-size: 120px;
         width: 160px;
         height: 160px;
@@ -347,7 +370,7 @@
     
     @media (max-width: 400px) {
       .number-one {
-        top: calc(50% - 260px);
+        top: calc(50% - 210px);
         font-size: 90px;
         width: 120px;
         height: 120px;
