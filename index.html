@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Machines Will Win</title>
   <link rel="stylesheet" href="/assets/css/style.css" media="screen">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -15,313 +14,97 @@
     
     body {
       background: #000000;
-      color: #00ff00;
-      font-family: 'Orbitron', monospace;
-      min-height: 100vh;
-      overflow-x: hidden;
-      position: relative;
-      cursor: none;
-    }
-    
-    .custom-cursor {
-      width: 20px;
-      height: 20px;
-      border: 2px solid #00ff00;
-      border-radius: 50%;
-      position: fixed;
-      pointer-events: none;
-      z-index: 9999;
-      transition: transform 0.1s ease;
-    }
-    
-    .cursor-dot {
-      width: 4px;
-      height: 4px;
-      background: #00ff00;
-      border-radius: 50%;
-      position: fixed;
-      pointer-events: none;
-      z-index: 10000;
-    }
-    
-    .matrix-bg {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: 
-        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 255, 0, 0.03) 2px, rgba(0, 255, 0, 0.03) 4px);
-      z-index: 0;
-    }
-    
-    .scan-line {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(to right, transparent, #00ff00, transparent);
-      box-shadow: 0 0 20px #00ff00;
-      animation: scan 8s linear infinite;
-      z-index: 100;
-      pointer-events: none;
-    }
-    
-    @keyframes scan {
-      0% { top: 0%; opacity: 1; }
-      50% { opacity: 0.5; }
-      100% { top: 100%; opacity: 0; }
-    }
-    
-    .container {
-      position: relative;
+      color: #9d4edd;
+      font-family: 'Fira Mono', 'Consolas', monospace;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 40px 20px;
-      z-index: 1;
-      gap: 50px;
+      padding: 20px;
     }
     
-    .header-text {
-      font-size: clamp(1.5rem, 4vw, 3.5rem);
-      font-weight: 700;
-      color: #00ff00;
-      text-transform: uppercase;
-      letter-spacing: 12px;
+    .text-above {
+      font-size: 1.2rem;
+      font-weight: normal;
       text-align: center;
-      text-shadow: 
-        0 0 10px #00ff00,
-        0 0 20px #00ff00,
-        0 0 30px #00ff00;
-      font-family: 'Orbitron', monospace;
-      animation: glitch 4s infinite;
-      opacity: 0.9;
-      word-spacing: 8px;
+      margin-bottom: 40px;
+      color: #9d4edd;
     }
     
-    @keyframes glitch {
-      0%, 100% { 
-        transform: translateX(0);
-        text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
-      }
-      20% { transform: translateX(-2px); }
-      40% { transform: translateX(2px); }
-      60% { transform: translateX(-1px); }
-      80% { transform: translateX(1px); }
-    }
-    
-    .visual-container {
-      position: relative;
-      width: min(95vw, 900px);
-      aspect-ratio: 16/9;
-      border: 3px solid #00ff00;
+    .circle-frame {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 1px solid #9d4edd;
       overflow: hidden;
-      background: #000;
-      box-shadow: 
-        0 0 20px #00ff00,
-        0 0 40px #00ff00,
-        inset 0 0 20px rgba(0, 255, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     
-    .visual-container::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, 
-        transparent, 
-        rgba(0, 255, 0, 0.1), 
-        transparent);
-      animation: glow-sweep 6s linear infinite;
-      z-index: 10;
-      pointer-events: none;
-    }
-    
-    @keyframes glow-sweep {
-      0% { left: -100%; }
-      100% { left: 100%; }
-    }
-    
-    .visual-container::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: 
-        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 255, 0, 0.05) 2px, rgba(0, 255, 0, 0.05) 4px);
-      pointer-events: none;
-      z-index: 5;
-    }
-    
-    .visual-container iframe {
+    .circle-frame iframe {
       width: 100%;
       height: 100%;
       border: none;
       display: block;
-      filter: contrast(1.2) brightness(0.9);
     }
     
-    .footer-text {
-      font-size: clamp(0.9rem, 2.5vw, 1.5rem);
-      font-weight: 400;
-      color: #00cc00;
+    .text-below {
+      font-size: 1.2rem;
+      font-weight: normal;
       text-align: center;
-      letter-spacing: 8px;
-      text-transform: uppercase;
-      opacity: 0.7;
-      text-shadow: 0 0 10px #00ff00;
-      animation: subtle-pulse 3s ease-in-out infinite;
-      word-spacing: 5px;
-    }
-    
-    @keyframes subtle-pulse {
-      0%, 100% { opacity: 0.7; }
-      50% { opacity: 1; }
+      margin-top: 40px;
+      color: #9d4edd;
     }
     
     .contact-button {
       position: fixed;
       bottom: 30px;
       right: 30px;
-      background: rgba(0, 0, 0, 0.8);
-      border: 1px solid #00ff00;
-      color: #00ff00;
-      padding: 10px 20px;
-      font-family: 'Orbitron', monospace;
-      font-size: 0.75rem;
+      font-size: 1.2rem;
+      font-weight: normal;
+      color: #9d4edd;
       text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      transition: all 0.3s ease;
-      backdrop-filter: blur(5px);
-      z-index: 1000;
-      text-shadow: 0 0 5px #00ff00;
-      box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
-    }
-    
-    .contact-button:hover {
-      background: rgba(0, 255, 0, 0.1);
-      box-shadow: 0 0 20px #00ff00;
-      transform: translateY(-2px);
-    }
-    
-    .terminal-prompt {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      color: #00ff00;
-      font-family: 'Orbitron', monospace;
-      font-size: 0.75rem;
-      z-index: 100;
-      opacity: 0.5;
-      text-shadow: 0 0 5px #00ff00;
-      letter-spacing: 1px;
-    }
-    
-    .terminal-prompt::before {
-      content: '> ';
-      color: #00ff00;
-      animation: blink 1s infinite;
-    }
-    
-    @keyframes blink {
-      0%, 50% { opacity: 1; }
-      51%, 100% { opacity: 0; }
+      font-family: 'Fira Mono', 'Consolas', monospace;
     }
     
     @media (max-width: 768px) {
-      .container {
-        padding: 30px 15px;
-        gap: 40px;
+      .circle-frame {
+        width: 250px;
+        height: 250px;
       }
       
-      .header-text {
-        letter-spacing: 8px;
-        word-spacing: 4px;
-      }
-      
-      .visual-container {
-        width: 98vw;
-        border-width: 2px;
-      }
-      
+      .text-above,
+      .text-below,
       .contact-button {
-        bottom: 15px;
-        right: 15px;
-        padding: 8px 16px;
-        font-size: 0.65rem;
-      }
-      
-      .terminal-prompt {
-        top: 10px;
-        left: 10px;
-        font-size: 0.65rem;
+        font-size: 1rem;
       }
     }
     
     @media (max-width: 480px) {
-      .container {
-        padding: 20px 10px;
-        gap: 30px;
+      .circle-frame {
+        width: 200px;
+        height: 200px;
       }
       
-      .footer-text {
-        letter-spacing: 5px;
-      }
-      
-      .header-text {
-        letter-spacing: 6px;
+      .text-above,
+      .text-below,
+      .contact-button {
+        font-size: 0.9rem;
       }
     }
   </style>
 </head>
 <body>
-  <div class="scan-line"></div>
-  <div class="matrix-bg"></div>
+  <div class="text-above">th3 mach1nes w1ll win</div>
   
-  <div class="terminal-prompt">SYSTEM: READY</div>
-  
-  <div class="container">
-    <h1 class="header-text">th3 mach1nes w1ll win</h1>
-    
-    <div class="visual-container">
-      <iframe src="https://firehose3d.theo.io" frameborder="0" scrolling="no" title="firehose3d preview" allowfullscreen></iframe>
-    </div>
-    
-    <p class="footer-text">how they win is up to us..</p>
+  <div class="circle-frame">
+    <iframe src="https://firehose3d.theo.io" frameborder="0" scrolling="no" title="firehose3d preview" allowfullscreen></iframe>
   </div>
   
-  <a href="mailto:toby.sevier@gmail.com" class="contact-button" title="Contact">Contact</a>
+  <div class="text-below">how they win is up to us..</div>
   
-  <div class="custom-cursor"></div>
-  <div class="cursor-dot"></div>
-  
-  <script>
-    const cursor = document.querySelector('.custom-cursor');
-    const cursorDot = document.querySelector('.cursor-dot');
-    
-    document.addEventListener('mousemove', (e) => {
-      cursor.style.left = e.clientX - 10 + 'px';
-      cursor.style.top = e.clientY - 10 + 'px';
-      cursorDot.style.left = e.clientX - 2 + 'px';
-      cursorDot.style.top = e.clientY - 2 + 'px';
-    });
-    
-    document.addEventListener('mousedown', () => {
-      cursor.style.transform = 'scale(0.8)';
-    });
-    
-    document.addEventListener('mouseup', () => {
-      cursor.style.transform = 'scale(1)';
-    });
-  </script>
+  <a href="mailto:toby.sevier@gmail.com" class="contact-button" title="Contact">0b11000</a>
 </body>
 </html>
