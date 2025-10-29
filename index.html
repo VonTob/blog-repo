@@ -5,418 +5,203 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Machines Will Win</title>
   <link rel="stylesheet" href="/assets/css/style.css" media="screen">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+    
     body {
-      background: #16181a;
-      color: #d1d5db;
-      font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+      background: #0a0e1a;
+      background-image: 
+        linear-gradient(rgba(0, 201, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 201, 255, 0.03) 1px, transparent 1px);
+      background-size: 50px 50px;
+      color: #00c9ff;
+      font-family: 'Rajdhani', 'Inter', sans-serif;
       margin: 0;
       padding: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+    
+    body::before {
+      content: '';
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background: radial-gradient(circle at 30% 30%, rgba(0, 201, 255, 0.15) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    
+    .container {
+      position: relative;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      position: relative;
-      overflow-x: hidden;
-    }
-    @keyframes sparkle {
-      0%, 100% {
-        opacity: 0.3;
-        transform: scale(0.8);
-      }
-      50% {
-        opacity: 1;
-        transform: scale(1.2);
-      }
-    }
-    @keyframes shimmer {
-      0% {
-        background-position: -200% center;
-      }
-      100% {
-        background-position: 200% center;
-      }
-    }
-    .stealth-button {
-      position: fixed;
-      top: calc(50% + 260px);
-      left: 50%;
-      transform: translateX(-50%);
-      background: linear-gradient(135deg, #2d1b4e 0%, #3d2a5e 25%, #2d1b4e 50%, #3d2a5e 75%, #2d1b4e 100%);
-      background-size: 200% 200%;
-      animation: shimmer 3s ease-in-out infinite;
-      border: 3px solid #9d4edd;
-      color: #9d4edd;
-      padding: 0;
-      font-size: 0.7rem;
-      font-family: 'Fira Mono', 'Consolas', monospace;
-      text-decoration: none;
-      border-radius: 50%;
-      width: 240px;
-      height: 240px;
-      display: flex;
-      align-items: center;
       justify-content: center;
-      transition: all 0.3s ease;
-      opacity: 0.9;
-      z-index: 1000;
-      letter-spacing: 0.5px;
+      padding: 60px 20px;
+      z-index: 1;
+      gap: 40px;
+    }
+    
+    .header-text {
+      font-size: clamp(2rem, 5vw, 4rem);
+      font-weight: 700;
+      color: #00c9ff;
       text-transform: uppercase;
-      font-weight: bold;
-      text-shadow: 0 0 5px #9d4edd, 0 0 10px #9d4edd, 0 0 15px #9d4edd, 0 0 20px #9d4edd;
-      box-shadow: 
-        0 0 15px rgba(157, 78, 221, 1),
-        0 0 25px rgba(157, 78, 221, 0.9),
-        0 0 40px rgba(157, 78, 221, 0.7),
-        0 0 50px rgba(157, 78, 221, 0.5),
-        inset 0 1px 0 rgba(157, 78, 221, 0.5),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+      letter-spacing: 8px;
+      text-align: center;
+      margin-bottom: 20px;
+      text-shadow: 0 0 20px rgba(0, 201, 255, 0.5);
+      font-family: 'Orbitron', monospace;
+      animation: pulse 3s ease-in-out infinite;
     }
-    .stealth-button::before {
-      content: '◉';
-      position: absolute;
-      top: -5px;
-      left: 15%;
-      font-size: 0.4rem;
-      color: #9d4edd;
-      animation: sparkle 2s ease-in-out infinite;
-      pointer-events: none;
-      filter: drop-shadow(0 0 3px #9d4edd);
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
     }
-    .stealth-button::after {
-      content: '◉';
-      position: absolute;
-      bottom: -5px;
-      right: 15%;
-      font-size: 0.4rem;
-      color: #9d4edd;
-      animation: sparkle 2s ease-in-out 1s infinite;
-      pointer-events: none;
-      filter: drop-shadow(0 0 3px #9d4edd);
-    }
-    .stealth-button:hover {
-      color: #c77dff;
-      background: linear-gradient(135deg, #3d2a5e 0%, #2d1b4e 25%, #3d2a5e 50%, #2d1b4e 75%, #3d2a5e 100%);
-      background-size: 200% 200%;
-      border-color: #c77dff;
-      opacity: 1;
-      box-shadow: 
-        0 0 20px rgba(157, 78, 221, 1),
-        0 0 35px rgba(157, 78, 221, 1),
-        0 0 50px rgba(157, 78, 221, 0.9),
-        0 0 65px rgba(157, 78, 221, 0.7),
-        inset 0 2px 0 rgba(157, 78, 221, 0.6),
-        inset 0 -2px 0 rgba(0, 0, 0, 0.5);
-    }
-    .stealth-button:active {
-      transform: translateX(-50%) translateY(2px) scale(0.97);
-      box-shadow: 
-        0 0 8px rgba(157, 78, 221, 0.8),
-        inset 0 2px 4px rgba(0, 0, 0, 0.5);
-      opacity: 0.95;
-    }
-    .circle-frame {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 400px;
-      height: 240px;
+    
+    .visual-container {
+      position: relative;
+      width: min(90vw, 800px);
+      aspect-ratio: 16/9;
+      border: 2px solid rgba(0, 201, 255, 0.3);
       border-radius: 8px;
       overflow: hidden;
+      background: #000;
       box-shadow: 
-        0 0 15px rgba(157, 78, 221, 1),
-        0 0 25px rgba(157, 78, 221, 0.9),
-        0 0 40px rgba(157, 78, 221, 0.7),
-        0 0 50px rgba(157, 78, 221, 0.5),
-        inset 0 1px 0 rgba(157, 78, 221, 0.5),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.5);
-      border: 3px solid #9d4edd;
-      background: linear-gradient(135deg, #23272a 0%, #2a2f35 25%, #23272a 50%, #2a2f35 75%, #23272a 100%);
-      background-size: 200% 200%;
-      animation: shimmer 3s ease-in-out infinite;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+        0 0 40px rgba(0, 201, 255, 0.2),
+        inset 0 0 60px rgba(0, 201, 255, 0.05);
     }
-    .circle-frame::before {
+    
+    .visual-container::before {
       content: '';
       position: absolute;
       top: 0;
       left: -100%;
       width: 100%;
       height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(157, 78, 221, 0.3), transparent);
-      animation: shimmer 3s ease-in-out infinite;
-      pointer-events: none;
+      background: linear-gradient(90deg, transparent, rgba(0, 201, 255, 0.1), transparent);
+      animation: scan 4s ease-in-out infinite;
       z-index: 10;
     }
-    .circle-frame iframe {
+    
+    @keyframes scan {
+      0% { left: -100%; }
+      50% { left: 100%; }
+      100% { left: 100%; }
+    }
+    
+    .visual-container iframe {
       width: 100%;
       height: 100%;
       border: none;
       display: block;
-      background: #23272a;
-      border-radius: 8px;
-      aspect-ratio: 16 / 9;
     }
-    .text-above {
-      position: fixed;
-      top: calc(50% - 200px);
-      left: 50%;
-      transform: translateX(-50%);
-      color: #9d4edd;
-      font-family: 'Fira Mono', 'Consolas', monospace;
-      font-size: 1.2rem;
-      font-weight: normal;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      z-index: 1000;
-      opacity: 0.8;
-      transition: all 0.3s ease;
+    
+    .footer-text {
+      font-size: clamp(1rem, 3vw, 1.8rem);
+      font-weight: 300;
+      color: #66c9ff;
       text-align: center;
-      text-shadow: 0 0 5px #9d4edd, 0 0 10px #9d4edd, 0 0 15px #9d4edd;
-      background: linear-gradient(135deg, rgba(157, 78, 221, 0.8) 0%, rgba(199, 125, 255, 0.8) 25%, rgba(157, 78, 221, 0.8) 50%, rgba(199, 125, 255, 0.8) 75%, rgba(157, 78, 221, 0.8) 100%);
-      background-size: 200% 200%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      animation: shimmer 3s ease-in-out infinite;
-      filter: drop-shadow(0 0 5px #9d4edd) drop-shadow(0 0 10px #9d4edd) drop-shadow(0 0 15px #9d4edd);
-    }
-    .text-below {
-      position: fixed;
-      top: calc(50% + 140px);
-      left: 50%;
-      transform: translateX(-50%);
-      color: #9d4edd;
-      font-family: 'Fira Mono', 'Consolas', monospace;
-      font-size: 1.2rem;
-      font-weight: normal;
-      letter-spacing: 0.5px;
+      letter-spacing: 4px;
       text-transform: uppercase;
-      z-index: 1000;
       opacity: 0.8;
-      transition: all 0.3s ease;
-      text-align: center;
-      text-shadow: 0 0 5px #9d4edd, 0 0 10px #9d4edd, 0 0 15px #9d4edd;
-      background: linear-gradient(135deg, rgba(157, 78, 221, 0.8) 0%, rgba(199, 125, 255, 0.8) 25%, rgba(157, 78, 221, 0.8) 50%, rgba(199, 125, 255, 0.8) 75%, rgba(157, 78, 221, 0.8) 100%);
-      background-size: 200% 200%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      animation: shimmer 3s ease-in-out infinite;
-      filter: drop-shadow(0 0 5px #9d4edd) drop-shadow(0 0 10px #9d4edd) drop-shadow(0 0 15px #9d4edd);
+      animation: fadeInOut 4s ease-in-out infinite;
     }
-    @media (max-width: 600px) {
-      .circle-frame { 
-        width: 300px; 
-        height: 180px; 
+    
+    @keyframes fadeInOut {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+    
+    .contact-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: rgba(0, 201, 255, 0.1);
+      border: 1px solid rgba(0, 201, 255, 0.3);
+      color: #00c9ff;
+      padding: 12px 24px;
+      font-family: 'Rajdhani', monospace;
+      font-size: 0.875rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+    
+    .contact-button:hover {
+      background: rgba(0, 201, 255, 0.2);
+      border-color: #00c9ff;
+      box-shadow: 0 0 20px rgba(0, 201, 255, 0.4);
+      transform: translateY(-2px);
+    }
+    
+    .grid-lines {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.3;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        padding: 40px 15px;
+        gap: 30px;
       }
-      .stealth-button {
-        top: calc(50% + 190px);
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 0.6rem;
-        width: 160px;
-        height: 160px;
-        padding: 0;
+      
+      .header-text {
+        letter-spacing: 4px;
       }
-      .text-above {
-        top: calc(50% - 160px);
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 1.0rem;
-        letter-spacing: 0.5px;
+      
+      .visual-container {
+        width: 95vw;
       }
-      .text-below {
-        top: calc(50% + 100px);
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 1.0rem;
-        letter-spacing: 0.5px;
+      
+      .contact-button {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        font-size: 0.75rem;
       }
     }
     
-    @media (max-width: 400px) {
-      .circle-frame { 
-        width: 250px; 
-        height: 150px; 
+    @media (max-width: 480px) {
+      .container {
+        padding: 30px 10px;
+        gap: 20px;
       }
-      .stealth-button {
-        top: calc(50% + 160px);
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 0.5rem;
-        width: 120px;
-        height: 120px;
-        padding: 0;
-      }
-      .text-above {
-        top: calc(50% - 120px);
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 0.8rem;
-      }
-      .text-below {
-        top: calc(50% + 70px);
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 0.8rem;
-      }
-      .number-one {
-        top: calc(50% - 380px);
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 120px;
-        width: 120px;
-        height: 120px;
-      }
-    }
-    .number-one {
-      position: fixed;
-      top: calc(50% - 320px);
-      left: 50%;
-      transform: translateX(-50%);
-      color: #9d4edd;
-      font-family: 'Fira Mono', 'Consolas', monospace;
-      font-size: 180px;
-      font-weight: normal;
-      line-height: 1;
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 240px;
-      height: 240px;
-      border-radius: 50%;
-      border: 3px solid #9d4edd;
-      text-shadow: 0 0 5px #9d4edd, 0 0 10px #9d4edd, 0 0 15px #9d4edd, 0 0 20px #9d4edd;
-      box-shadow: 
-        0 0 15px rgba(157, 78, 221, 1),
-        0 0 25px rgba(157, 78, 221, 0.9),
-        0 0 40px rgba(157, 78, 221, 0.7),
-        0 0 50px rgba(157, 78, 221, 0.5),
-        inset 0 1px 0 rgba(157, 78, 221, 0.5),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.5);
-      filter: drop-shadow(0 0 5px #9d4edd) drop-shadow(0 0 10px #9d4edd) drop-shadow(0 0 15px #9d4edd) blur(1px);
-      background: linear-gradient(135deg, rgba(157, 78, 221, 0.8) 0%, rgba(199, 125, 255, 0.8) 25%, rgba(157, 78, 221, 0.8) 50%, rgba(199, 125, 255, 0.8) 75%, rgba(157, 78, 221, 0.8) 100%);
-      background-size: 200% 200%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      animation: shimmer 3s ease-in-out infinite;
-      position: relative;
-    }
-    .number-one::before {
-      content: '◉';
-      position: absolute;
-      top: -8px;
-      left: 15%;
-      font-size: 0.6rem;
-      color: #9d4edd;
-      animation: sparkle 2s ease-in-out infinite;
-      pointer-events: none;
-      filter: drop-shadow(0 0 5px #9d4edd);
-    }
-    .number-one::after {
-      content: '◉';
-      position: absolute;
-      bottom: -8px;
-      right: 15%;
-      font-size: 0.6rem;
-      color: #9d4edd;
-      animation: sparkle 2s ease-in-out 1s infinite;
-      pointer-events: none;
-      filter: drop-shadow(0 0 5px #9d4edd);
-    }
-    @media (max-width: 600px) {
-      .number-one {
-        top: calc(50% - 250px);
-        font-size: 120px;
-        width: 160px;
-        height: 160px;
-        border: 3px solid #9d4edd;
-      }
-      .circle-frame { 
-        width: 160px; 
-        height: 160px; 
-      }
-      .stealth-button {
-        top: calc(50% + 190px);
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 0.6rem;
-        width: 160px;
-        height: 160px;
-        padding: 0;
-      }
-      .text-above {
-        top: calc(50% - 160px);
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 1.0rem;
-        letter-spacing: 0.5px;
-      }
-      .text-below {
-        top: calc(50% + 100px);
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 1.0rem;
-        letter-spacing: 0.5px;
-      }
-    }
-    
-    @media (max-width: 400px) {
-      .number-one {
-        top: calc(50% - 210px);
-        font-size: 90px;
-        width: 120px;
-        height: 120px;
-        border: 3px solid #9d4edd;
-      }
-      .circle-frame { 
-        width: 240px; 
-        height: 120px; 
-      }
-      .stealth-button {
-        top: calc(50% + 160px);
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 0.5rem;
-        width: 120px;
-        height: 120px;
-        padding: 0;
-      }
-      .text-above {
-        top: calc(50% - 120px);
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 0.8rem;
-      }
-      .text-below {
-        top: calc(50% + 70px);
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 0.8rem;
+      
+      .footer-text {
+        letter-spacing: 2px;
       }
     }
   </style>
 </head>
 <body>
-  <a href="mailto:toby.sevier@gmail.com" class="stealth-button" title="0b11000">0b11000</a>
-  <div class="text-above">th3 mach1nes w1ll win</div>
-  <div class="circle-frame">
-<!--    <iframe src="https://thestrikeagency.com/kaos" frameborder="0" scrolling="no" title="firehose3d preview" allowfullscreen></iframe> -->
-<!--    <iframe src="https://yoavg.github.io/eternal/" frameborder="0" scrolling="no" title="firehose3d preview" allowfullscreen></iframe>  -->
-  <iframe src="https://firehose3d.theo.io" frameborder="0" scrolling="no" title="firehose3d preview" allowfullscreen></iframe>
-<!--    <iframe src="https://kotsoft.github.io" frameborder="0" scrolling="no" title="firehose3d preview" allowfullscreen></iframe>  -->
-<!--    <iframe src="https://2swap.github.io/Klotski-Webpage/" frameborder="0" scrolling="no" title="firehose3d preview" allowfullscreen></iframe>  -->
-<!--    <iframe src="https://unscreenshottable.vercel.app/?text=Hello" frameborder="0" scrolling="no" title="firehose3d preview" allowfullscreen></iframe> -->
-<!--    <iframe src="https://platform.leolabs.space/visualizations/leo" frameborder="0" scrolling="no" title="firehose3d preview" allowfullscreen></iframe> -->
-<!--    <iframe src="https://noamtamir.github.io/morpheus/" frameborder="0" scrolling="no" title="firehose3d preview" allowfullscreen></iframe>  -->
+  <div class="container">
+    <h1 class="header-text">th3 mach1nes w1ll win</h1>
+    
+    <div class="visual-container">
+      <iframe src="https://firehose3d.theo.io" frameborder="0" scrolling="no" title="firehose3d preview" allowfullscreen></iframe>
+    </div>
+    
+    <p class="footer-text">how they win is up to us..</p>
   </div>
-  <div class="text-below">how they win is up to us..</div>
+  
+  <a href="mailto:toby.sevier@gmail.com" class="contact-button" title="Contact">Contact</a>
 </body>
-</html> 
+</html>
