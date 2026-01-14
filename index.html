@@ -34,15 +34,24 @@
     }
     
     .circle-frame {
-      width: 225px;
-      height: 225px;
-      border-radius: 50%;
+      width: 200px;  /* Set your desired circle size */
+      height: 200px;
+      border-radius: 50%; /* Makes the frame circular */
       border: 1px solid #9d4edd;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      overflow: hidden;   /* Hides the parts of the iframe outside the circle */
+      position: relative; /* Establishes a positioning context */
       box-shadow: 0 0 15px rgba(157, 78, 221, 0.8), 0 0 30px rgba(157, 78, 221, 0.5);
+    }
+    
+    .circle-frame iframe {
+      width: 1000px; /* Make the iframe much larger than the circle */
+      height: 1000px;
+      position: absolute;
+      
+      /* Center the iframe within the circle */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.5); /* scale() is optional; adjust as needed */
     }
     
     .text-below {
